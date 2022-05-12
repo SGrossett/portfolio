@@ -45,13 +45,13 @@ function ProfileNav() {
                 <Nav.Link href="#action4" className='text-white pr-4'>Contact</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="https://github.com/SGrossett" className='text-white'>
+                <Nav.Link href="https://github.com/SGrossett" target='_blank' className='text-white'>
                   <BsGithub size={22} />
                 </Nav.Link>
-                <Nav.Link href="https://www.linkedin.com/in/selene-grossett/" className='text-white'>
+                <Nav.Link href="https://www.linkedin.com/in/selene-grossett/" target='_blank' className='text-white'>
                   <FaLinkedinIn size={22} />
                 </Nav.Link>
-                <Nav.Link href="https://medium.com/@selene_816" className='text-white'>
+                <Nav.Link href="https://medium.com/@selene_816" target='_blank' className='text-white'>
                   <BsMedium size={22} />
                 </Nav.Link>
               </Nav>
