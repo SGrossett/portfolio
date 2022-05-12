@@ -1,11 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Nav, Navbar, Container, Offcanvas, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import logo from './images/bwProfileLogo.png';
+import blackLogo from './images/profileLogo.png';
+import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
+
 function ProfileNav() {
   return (
     <>
-      <Navbar bg="light" expand="sm" className="mb-3">
+      <Navbar bg="dark" expand="sm" className="mb-3">
         <Container fluid>
-          <Navbar.Brand href="#">Selene Grossett</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={logo}
+              width="45"
+              height="45"
+              className="d-inline-block align-top"
+            />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-sm`}
@@ -14,7 +25,13 @@ function ProfileNav() {
           >
             <Offcanvas.Header closeButton>
               <Offcanvas.Title id={`offcanvasNavbarLabel-expand-sm`}>
-                Selene Grossett
+                <img
+                alt=""
+                src={blackLogo}
+                width="40"
+                height="40"
+                className="d-inline-block align-top"
+              />
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -29,6 +46,7 @@ function ProfileNav() {
           </Navbar.Offcanvas>
         </Container>
       </Navbar>
+      
     </>
   )
 }
