@@ -3,6 +3,9 @@ import logo from './images/bwProfileLogo.png';
 import blackLogo from './images/profileLogo.png';
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
 
+import { BsGithub, BsMedium } from 'react-icons/bs';
+import { FaLinkedinIn } from 'react-icons/fa';
+
 function ProfileNav() {
   return (
     <>
@@ -14,7 +17,7 @@ function ProfileNav() {
               src={logo}
               width="45"
               height="45"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top mx-4"
             />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-sm`} />
@@ -36,11 +39,21 @@ function ProfileNav() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1">About Me</Nav.Link>
-                <Nav.Link href="#action2">Projects</Nav.Link>
-                <Nav.Link href="#action3">Resume</Nav.Link>
-                <Nav.Link href="#action4">Contact</Nav.Link>
-                <Nav.Link href="#action5">Extras</Nav.Link>
+                <Nav.Link href="#action1" className='text-white'>About</Nav.Link>
+                <Nav.Link href="#action2" className='text-white'>Projects</Nav.Link>
+                <Nav.Link href="#action3" className='text-white'>Resume</Nav.Link>
+                <Nav.Link href="#action4" className='text-white pr-4'>Contact</Nav.Link>
+              </Nav>
+              <Nav>
+                <Nav.Link href="#action5" className='text-white'>
+                  <BsGithub size={22} />
+                </Nav.Link>
+                <Nav.Link href="#action5" className='text-white'>
+                  <FaLinkedinIn size={22} />
+                </Nav.Link>
+                <Nav.Link href="#action5" className='text-white'>
+                  <BsMedium size={22} />
+                </Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
