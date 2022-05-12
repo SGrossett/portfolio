@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import logo from './images/bwProfileLogo.png';
 import blackLogo from './images/profileLogo.png';
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
@@ -39,10 +40,10 @@ function ProfileNav() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="#action1" className='text-white'>About</Nav.Link>
-                <Nav.Link href="#action2" className='text-white'>Projects</Nav.Link>
-                <Nav.Link href="#action3" className='text-white'>Resume</Nav.Link>
-                <Nav.Link href="#action4" className='text-white pr-4'>Contact</Nav.Link>
+                <Nav.Link href="/" className='text-white'>About</Nav.Link>
+                <Nav.Link href="/projects" className='text-white'>Projects</Nav.Link>
+                <Nav.Link href="/resume" className='text-white'>Resume</Nav.Link>
+                <Nav.Link href="/contact" className='text-white pr-4'>Contact</Nav.Link>
               </Nav>
               <Nav>
                 <Nav.Link href="https://github.com/SGrossett" target='_blank' className='text-white'>
