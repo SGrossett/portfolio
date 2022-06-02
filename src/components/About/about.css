@@ -10,7 +10,7 @@
 .cardImage {
   border-radius: 12px;
   max-height: 330px;
-  filter: brightness(0.7)
+  filter: brightness(0.6)
 }
 .overlay-dark {
   background-color: rgba(black, 0.4);
