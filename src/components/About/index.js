@@ -33,16 +33,16 @@ function AboutPage() {
                 className=" "
                 
               >
-                <Card.Img variant="top" src={luffyCard} />
+                <Card.Img variant="top" src={luffyCard} className='cardImage' />
                 <Card.ImgOverlay className="d-flex flex-column text-white">
-                  <Card.Title >Card title</Card.Title>
+                  <Card.Title className='cardTitle'>Card title</Card.Title>
                   <Card.Text>
                     This is a longer card with supporting text below as a natural
                     lead-in to additional content. This content is a little bit longer.
                   </Card.Text>
-                  <Card.Footer className="mt-auto">
-                    <small className="text-muted">Demo</small>
-                    <small className="text-muted">GitHub</small>
+                  <Card.Footer className="mt-auto d-flex justify-content-between">
+                    <small className="text-white">Demo</small>
+                    <small className="text-white ">GitHub</small>
 
                   </Card.Footer>
                 </Card.ImgOverlay>
@@ -108,11 +108,11 @@ const projects = [
     demo: '',
     github: 'https://github.com/SGrossett/practice-final'
   },
-  {
-    image: tinyCard,
-    title: 'TinyApp',
-    text: 'A full stack web app built with Node and Express that allows users to shorten long URLS.',
-    demo: '',
-    github: 'https://github.com/SGrossett/practice-final'
-  }
+  // {
+  //   image: tinyCard,
+  //   title: 'TinyApp',
+  //   text: 'A full stack web app built with Node and Express that allows users to shorten long URLS.',
+  //   demo: '',
+  //   github: 'https://github.com/SGrossett/practice-final'
+  // }
 ]
