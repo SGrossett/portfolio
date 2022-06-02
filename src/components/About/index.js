@@ -1,4 +1,4 @@
-import { Row, Col, Container, Card } from 'react-bootstrap';
+import { Row, Col, Container, Card, Stack } from 'react-bootstrap';
 import './about.css';
 
 import luffyCard from './images/luffyCard.jpg';
@@ -24,68 +24,70 @@ function AboutPage() {
           <h2>Programmer, Designer and Book Lover</h2>
           {true}
         </Row>
-        <Row>
-          <h2>Featured Projects</h2>
-        </Row>
-        {/* <Row xs={1} md={2} lg={4} className="g-4 ">
-          {Array.from({ length: 8 }).map((_, idx) => (
-            <Col>
-              <Card
-                className=" "
-                
-              >
-                <Card.Img variant="top" src={luffyCard} className='cardImage' />
-                <Card.ImgOverlay className="d-flex flex-column text-white">
-                  <Card.Title className='cardTitle'>Card title</Card.Title>
-                  <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit longer.
-                  </Card.Text>
-                  <Card.Footer className="mt-auto d-flex justify-content-between">
-                    <small className="text-white">Demo</small>
-                    <small className="text-white ">GitHub</small>
-
-                  </Card.Footer>
-                </Card.ImgOverlay>
-              </Card>
-            </Col>
-          ))}
-        </Row> */}
-        <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 ">
-          {projects.map((project) => (
+        <Stack>
+          <Row>
+            <h2>Featured Projects</h2>
+          </Row>
+          {/* <Row xs={1} md={2} lg={4} className="g-4 ">
+            {Array.from({ length: 8 }).map((_, idx) => (
               <Col>
                 <Card
                   className=" "
                   
                 >
-                  <Card.Img variant="top" src={project.image} className='cardImage' />
+                  <Card.Img variant="top" src={luffyCard} className='cardImage' />
                   <Card.ImgOverlay className="d-flex flex-column text-white">
-                    <Card.Title className='cardTitle'>{project.title}</Card.Title>
+                    <Card.Title className='cardTitle'>Card title</Card.Title>
                     <Card.Text>
-                       {/* {project.text} */}
+                      This is a longer card with supporting text below as a natural
+                      lead-in to additional content. This content is a little bit longer.
                     </Card.Text>
                     <Card.Footer className="mt-auto d-flex justify-content-between">
-                      <small className="text-white">
-                        {project.demo && 
-                          <a href={project.demo} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
-                            Demo
-                          </a>
-                        }
-                      </small>
-                      <small className="text-white ">
-                      {project.github && 
-                          <a href={project.github} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
-                            GitHub
-                          </a>
-                        }
-                      </small>
+                      <small className="text-white">Demo</small>
+                      <small className="text-white ">GitHub</small>
 
                     </Card.Footer>
                   </Card.ImgOverlay>
                 </Card>
               </Col>
             ))}
-        </Row>
+          </Row> */}
+          <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 justify-content-center">
+            {projects.map((project) => (
+                <Col>
+                  <Card
+                    className=" "
+                    
+                  >
+                    <Card.Img variant="top" src={project.image} className='cardImage' />
+                    <Card.ImgOverlay className="d-flex flex-column text-white">
+                      <Card.Title className='cardTitle'>{project.title}</Card.Title>
+                      <Card.Text>
+                        {/* {project.text} */}
+                      </Card.Text>
+                      <Card.Footer className="mt-auto d-flex justify-content-between">
+                        <small className="text-white">
+                          {project.demo && 
+                            <a href={project.demo} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                              Demo
+                            </a>
+                          }
+                        </small>
+                        <small className="text-white ">
+                        {project.github && 
+                            <a href={project.github} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                              GitHub
+                            </a>
+                          }
+                        </small>
+
+                      </Card.Footer>
+                    </Card.ImgOverlay>
+                  </Card>
+                </Col>
+              ))}
+          </Row>
+        </Stack>
       </Container>
     </div>
   )
