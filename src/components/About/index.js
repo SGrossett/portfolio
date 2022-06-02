@@ -3,9 +3,10 @@ import './about.css';
 
 import luffyCard from './images/luffyCard.jpg';
 import schedulerCard from './images/schedulerCard.jpg';
-import suCard from './images/suCard.jpg';
+import suCard from './images/suCard2.jpg';
 import introCard from './images/introCard.jpg';
 import healthCard from './images/healthCard.jpg';
+import markitCard from './images/markitCard.jpg';
 
 
 function AboutPage() {
@@ -33,7 +34,7 @@ function AboutPage() {
                 
               >
                 <Card.Img variant="top" src={luffyCard} />
-                <Card.ImgOverlay className="d-flex flex-column">
+                <Card.ImgOverlay className="d-flex flex-column text-white">
                   <Card.Title >Card title</Card.Title>
                   <Card.Text>
                     This is a longer card with supporting text below as a natural
