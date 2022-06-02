@@ -65,8 +65,20 @@ function AboutPage() {
                        {/* {project.text} */}
                     </Card.Text>
                     <Card.Footer className="mt-auto d-flex justify-content-between">
-                      <small className="text-white">Demo</small>
-                      <small className="text-white ">GitHub</small>
+                      <small className="text-white">
+                        {project.demo && 
+                          <a href={project.demo} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                            Demo
+                          </a>
+                        }
+                      </small>
+                      <small className="text-white ">
+                      {project.github && 
+                          <a href={project.github} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                            GitHub
+                          </a>
+                        }
+                      </small>
 
                     </Card.Footer>
                   </Card.ImgOverlay>
@@ -91,13 +103,6 @@ const projects = [
     github: ''
   },
   {
-    image: luffyCard,
-    title: 'Tweeter',
-    text: 'A single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX.',
-    demo: 'https://sesi-tweeter.herokuapp.com/',
-    github: 'https://github.com/SGrossett/tweeter-react'
-  },
-  {
     image: markitCard,
     title: 'MarkitIQ',
     text: 'Landing pages for a site that makes landing pages.',
@@ -110,6 +115,13 @@ const projects = [
     text: 'A Spotify integrated Pomodoro app that acts as a time management tool that plays music, minimizes distractions, and tracks your progress while you study. Built with Next.js, Tailwind CSS, and Prisma.',
     demo: 'https://staging8.indigrowthhealth.com/counselling/',
     github: ''
+  },
+  {
+    image: luffyCard,
+    title: 'Tweeter',
+    text: 'A single-page Twitter clone built with HTML, CSS, JS, jQuery and AJAX.',
+    demo: 'https://sesi-tweeter.herokuapp.com/',
+    github: 'https://github.com/SGrossett/tweeter-react'
   },
   {
     image: suCard,
