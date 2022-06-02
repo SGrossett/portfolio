@@ -3,6 +3,7 @@
 }
 .card {
   border: none;
+  border-radius: 12px;;
 }
 .cardTitle {
   font-size: 2rem;
