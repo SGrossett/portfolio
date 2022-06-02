@@ -7,7 +7,8 @@ import suCard from './images/suCard2.jpg';
 import introCard from './images/introCard.jpg';
 import healthCard from './images/healthCard.jpg';
 import markitCard from './images/markitCard.jpg';
-
+import pomifyCard from './images/pomifyCard2.png';
+import counsellingCard from './images/counsellingCard2.png'
 
 function AboutPage() {
   return (
@@ -61,7 +62,7 @@ function AboutPage() {
                   <Card.ImgOverlay className="d-flex flex-column text-white">
                     <Card.Title className='cardTitle'>{project.title}</Card.Title>
                     <Card.Text>
-                       {project.text}
+                       {/* {project.text} */}
                     </Card.Text>
                     <Card.Footer className="mt-auto d-flex justify-content-between">
                       <small className="text-white">Demo</small>
@@ -84,7 +85,7 @@ export default AboutPage;
 const projects = [
   {
     image: healthCard,
-    title: 'IndiGrowth Health Coaching',
+    title: 'Health Coaching',
     text: '',
     demo: 'https://staging8.indigrowthhealth.com/health-coaching-3/',
     github: ''
@@ -104,6 +105,20 @@ const projects = [
     github: ''
   },
   {
+    image: counsellingCard,
+    title: 'Counselling',
+    text: 'A Spotify integrated Pomodoro app that acts as a time management tool that plays music, minimizes distractions, and tracks your progress while you study. Built with Next.js, Tailwind CSS, and Prisma.',
+    demo: 'https://staging8.indigrowthhealth.com/counselling/',
+    github: ''
+  },
+  {
+    image: suCard,
+    title: 'Tribute to Steven Universe',
+    text: 'A Steven Universe tribute page. freeCodeCamp Responsive Web Design Project',
+    demo: '',
+    github: 'https://github.com/SGrossett/steven-universe-tribute'
+  },
+  {
     image: introCard,
     title: 'Intro Section with Dropdown Menu',
     text: 'A Frontend Mentor challenge that demonstrates ability to create responsive navigation menus.',
@@ -118,24 +133,11 @@ const projects = [
     github: 'https://github.com/SGrossett/scheduler'
   },
   {
-    image: luffyCard,
+    image: pomifyCard,
     title: 'Pomify',
     text: 'A Spotify integrated Pomodoro app that acts as a time management tool that plays music, minimizes distractions, and tracks your progress while you study. Built with Next.js, Tailwind CSS, and Prisma.',
     demo: '',
     github: 'https://github.com/SGrossett/practice-final'
   },
-  {
-    image: suCard,
-    title: 'Tribute to Steven Universe',
-    text: 'A Steven Universe tribute page. freeCodeCamp Responsive Web Design Project',
-    demo: '',
-    github: 'https://github.com/SGrossett/steven-universe-tribute'
-  },
-  // {
-  //   image: tinyCard,
-  //   title: 'TinyApp',
-  //   text: 'A full stack web app built with Node and Express that allows users to shorten long URLS.',
-  //   demo: '',
-  //   github: 'https://github.com/SGrossett/practice-final'
-  // }
+
 ]
