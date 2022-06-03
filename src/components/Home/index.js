@@ -1,6 +1,7 @@
 import './home.css';
 import { Row, Col, Container, Card, Stack, Button } from 'react-bootstrap';
 import { HiOutlineChevronDoubleRight } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 import luffyCard from './images/luffyCard.jpg';
 import schedulerCard from './images/schedulerCard2.jpg';
@@ -58,7 +59,7 @@ function HomePage() {
                         </small>
                         <small className="text-white ">
                         {project.github && 
-                            <a href={project.github} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                            <a href={project.github} className='text-decoration-none text-white' rel="noopener noreferrer">
                               GitHub
                             </a>
                           }
@@ -71,11 +72,10 @@ function HomePage() {
           </Row>
           <Row className="ml-auto">
             <h3 className='text-neonPink'>
-
-              <a href='/projects' target="_blank" className='text-decoration-none text-info' rel="noopener noreferrer">
+              <Link to='/projects' className='text-decoration-none text-info'> 
                 See All Projects --
                 <HiOutlineChevronDoubleRight />
-              </a>
+              </Link>
             </h3>
           </Row>
         </Stack>
