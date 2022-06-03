@@ -31,7 +31,9 @@ function HomePage() {
             <p className='w- mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula mauris nunc, vel semper mauris tempor ultrices. Donec magna sem, pretium quis mauris vitae, rutrum tristique risus. Suspendisse tristique laoreet neque eget pharetra. Nunc vehicula sem a lacus hendrerit dapibus.</p>
           </Row>
           <Row>
-            <Button variant="outline-info hire-button">Hire me!</Button>{' '}
+            <Link to='/contact'>
+              <Button variant="outline-info hire-button">Hire me!</Button>{' '}
+            </Link>
           </Row>
         </Stack>
         <Stack gap={5}>
