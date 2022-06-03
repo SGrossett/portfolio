@@ -1,6 +1,11 @@
+body {
+  background-color: #000912;
+}
+
 .heading {
   margin-top: 8vh;
 }
+
 .card {
   border: none;
   border-radius: 12px;
