@@ -106,7 +106,7 @@ function HomePage() {
   )
 }
 
-export default AboutPage;
+export default HomePage;
 
 
 const projects = [
