@@ -1,5 +1,6 @@
-import { Row, Col, Container, Card, Stack } from 'react-bootstrap';
 import './about.css';
+import { Row, Col, Container, Card, Stack } from 'react-bootstrap';
+import { HiOutlineChevronDoubleRight, HiOutlineArrowRight } from 'react-icons/hi';
 
 import luffyCard from './images/luffyCard.jpg';
 import schedulerCard from './images/schedulerCard2.jpg';
@@ -9,6 +10,7 @@ import healthCard from './images/healthCard.jpg';
 import markitCard from './images/markitCard.jpg';
 import pomifyCard from './images/pomifyCard2.png';
 import counsellingCard from './images/counsellingCard2.png'
+
 
 function AboutPage() {
   return (
@@ -24,9 +26,9 @@ function AboutPage() {
           <h2>Programmer, Designer and Book Lover</h2>
           {true}
         </Row>
-        <Stack>
+        <Stack gap={5}>
           <Row>
-            <h2>Featured Projects</h2>
+            <h2 className='text-white'>Featured Projects</h2>
           </Row>
           {/* <Row xs={1} md={2} lg={4} className="g-4 ">
             {Array.from({ length: 8 }).map((_, idx) => (
@@ -55,10 +57,7 @@ function AboutPage() {
           <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 justify-content-center">
             {projects.map((project) => (
                 <Col>
-                  <Card
-                    className=" "
-                    
-                  >
+                  <Card>
                     <Card.Img variant="top" src={project.image} className='cardImage' />
                     <Card.ImgOverlay className="d-flex flex-column text-white">
                       <Card.Title className='cardTitle'>{project.title}</Card.Title>
@@ -80,12 +79,19 @@ function AboutPage() {
                             </a>
                           }
                         </small>
-
                       </Card.Footer>
                     </Card.ImgOverlay>
                   </Card>
                 </Col>
               ))}
+          </Row>
+          <Row className="ml-auto">
+            <h3 className='text-neonPink'>
+              <a href='/projects' target="_blank" className='text-decoration-none text-neonPink' rel="noopener noreferrer">
+                See All Projects --
+                <HiOutlineChevronDoubleRight />
+              </a>
+            </h3>
           </Row>
         </Stack>
       </Container>
