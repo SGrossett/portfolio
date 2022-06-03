@@ -1,5 +1,5 @@
-.luffyCard {
-
+.heading {
+  margin-top: 13vh;
 }
 .card {
   border: none;
@@ -18,7 +18,33 @@
 .text-neonPink {
   color: #fc207a;
 }
+.text-neonPink2 {
+  color: #c34d73;
+}
+.text-offPink {
+  color: #b98a9d;
+}
+.text-info2 {
+  color: #93dae8;
+}
 
 .ml-auto {
   margin-left: auto;
+}
+
+.font-2 {
+  font-size: 2rem;
+}
+.font-4 {
+  font-size: 4rem;
+}
+.font-5 {
+  font-size: 5rem;
+}
+
+.hire-button {
+  width: 10rem;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  margin: 2rem 0 8rem 0.8rem;
 }
