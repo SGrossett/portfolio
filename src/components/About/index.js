@@ -1,6 +1,6 @@
 import './about.css';
-import { Row, Col, Container, Card, Stack } from 'react-bootstrap';
-import { HiOutlineChevronDoubleRight, HiOutlineArrowRight } from 'react-icons/hi';
+import { Row, Col, Container, Card, Stack, Button } from 'react-bootstrap';
+import { HiOutlineChevronDoubleRight } from 'react-icons/hi';
 
 import luffyCard from './images/luffyCard.jpg';
 import schedulerCard from './images/schedulerCard2.jpg';
@@ -16,16 +16,20 @@ function AboutPage() {
   return (
     <div>
       <Container >
-        <Row>
-          <p>Hello, my name is</p>
-        </Row>
-        <Row>
-          <h2>Selene Grossett</h2>
-        </Row>
-        <Row>
-          <h2>Programmer, Designer and Book Lover</h2>
-          {true}
-        </Row>
+        <Stack className='heading'>
+          <Row>
+            <h5 className='text-info font-2'>Hello, my name is</h5>
+          </Row>
+          <Row>
+            <h1 className='text-info2 font-4'>Selene Grossett.</h1>
+          </Row>
+          <Row>
+            <h1 className='text-white font-4'>Developer, Designer and Book Lover</h1>
+          </Row>
+          <Row>
+            <Button variant="outline-info hire-button">Hire me</Button>{' '}
+          </Row>
+        </Stack>
         <Stack gap={5}>
           <Row>
             <h2 className='text-white'>Featured Projects</h2>
@@ -87,7 +91,7 @@ function AboutPage() {
           </Row>
           <Row className="ml-auto">
             <h3 className='text-neonPink'>
-              <a href='/projects' target="_blank" className='text-decoration-none text-neonPink' rel="noopener noreferrer">
+              <a href='/projects' target="_blank" className='text-decoration-none text-info' rel="noopener noreferrer">
                 See All Projects --
                 <HiOutlineChevronDoubleRight />
               </a>
