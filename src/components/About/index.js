@@ -18,16 +18,16 @@ function AboutPage() {
       <Container >
         <Stack className='heading'>
           <Row>
-            <h5 className='text-info font-2'>Hello, my name is</h5>
+            <h5 className='text-info font-1'>Hello, my name is</h5>
           </Row>
           <Row>
-            <h1 className='text-info2 font-4'>Selene Grossett.</h1>
+            <h1 className='text-info2 font-3'>Selene Grossett.</h1>
           </Row>
           <Row>
-            <h1 className='text-white font-4'>Developer, Designer and Book Lover</h1>
+            <h1 className='text-white font-3'>Developer, Designer and Book Lover</h1>
           </Row>
           <Row>
-            <Button variant="outline-info hire-button">Hire me</Button>{' '}
+            <Button variant="outline-info hire-button">Hire me!</Button>{' '}
           </Row>
         </Stack>
         <Stack gap={5}>
