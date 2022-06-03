@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './images/bwProfileLogo.png';
 import blackLogo from './images/profileLogo.png';
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import { BsGithub, BsMedium } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
@@ -40,7 +41,8 @@ function ProfileNav() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link href="/" className='text-white'>About</Nav.Link>
+                <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+                <Nav.Link href="/about" className='text-white'>About</Nav.Link>
                 <Nav.Link href="/projects" className='text-white'>Projects</Nav.Link>
                 <Nav.Link href="/resume" className='text-white'>Resume</Nav.Link>
                 <Nav.Link href="/contact" className='text-white pr-4'>Contact</Nav.Link>
