@@ -1,4 +1,4 @@
-import './about.css';
+import './home.css';
 import { Row, Col, Container, Card, Stack, Button } from 'react-bootstrap';
 import { HiOutlineChevronDoubleRight } from 'react-icons/hi';
 
@@ -12,7 +12,7 @@ import pomifyCard from './images/pomifyCard2.png';
 import counsellingCard from './images/counsellingCard2.png'
 
 
-function AboutPage() {
+function HomePage() {
   return (
     <div>
       <Container >
