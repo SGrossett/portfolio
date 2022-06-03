@@ -32,7 +32,7 @@ function HomePage() {
           </Row>
           <Row>
             <Link to='/contact'>
-              <Button variant="outline-info hire-button">Hire me!</Button>{' '}
+              <Button variant='outline-info hire-button'>Hire me!</Button>{' '}
             </Link>
           </Row>
         </Stack>
@@ -41,27 +41,27 @@ function HomePage() {
             <h2 className='text-white'>Featured Projects</h2>
           </Row>
           
-          <Row xs={1} md={2} lg={3} xl={3} xxl={4} className="g-4 justify-content-center">
+          <Row xs={1} md={2} lg={3} xl={3} xxl={4} className='g-4 justify-content-center'>
             {projects.map((project) => (
                 <Col>
                   <Card>
-                    <Card.Img variant="top" src={project.image} className='cardImage' />
-                    <Card.ImgOverlay className="d-flex flex-column text-white">
+                    <Card.Img variant='top' src={project.image} className='cardImage' />
+                    <Card.ImgOverlay className='d-flex flex-column text-white'>
                       <Card.Title className='cardTitle'>{project.title}</Card.Title>
                       <Card.Text>
                         {/* {project.text} */}
                       </Card.Text>
-                      <Card.Footer className="mt-auto d-flex justify-content-between">
-                        <small className="text-white">
+                      <Card.Footer className='mt-auto d-flex justify-content-between'>
+                        <small className='text-white'>
                           {project.demo && 
-                            <a href={project.demo} target="_blank" className='text-decoration-none text-white' rel="noopener noreferrer">
+                            <a href={project.demo} target='_blank' className='text-decoration-none text-white' rel='noopener noreferrer'>
                               Demo
                             </a>
                           }
                         </small>
-                        <small className="text-white ">
+                        <small className='text-white '>
                         {project.github && 
-                            <a href={project.github} className='text-decoration-none text-white' rel="noopener noreferrer">
+                            <a href={project.github} className='text-decoration-none text-white' rel='noopener noreferrer'>
                               GitHub
                             </a>
                           }
@@ -72,7 +72,7 @@ function HomePage() {
                 </Col>
               ))}
           </Row>
-          <Row className="ml-auto">
+          <Row className='ml-auto'>
             <h3 className='text-neonPink'>
               <Link to='/projects' className='text-decoration-none text-info'> 
                 See All Projects --
