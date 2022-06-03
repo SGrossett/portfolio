@@ -1,5 +1,5 @@
 .heading {
-  margin-top: 13vh;
+  margin-top: 8vh;
 }
 .card {
   border: none;
@@ -33,14 +33,75 @@
 }
 
 .font-1 {
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+.font-2 {
+  font-size: 2rem;
 }
 .font-3 {
-  font-size: 3rem;
+  font-size: 1.7rem;
 }
 
 .hire-button {
-  width: 8rem;
-  padding: 0.75rem;
-  margin: 2rem 0 8rem 0.8rem;
+  width: 6rem;
+  padding: 0.4rem;
+  margin: 2rem 0 6rem 0.8rem;
 }
+
+.w-45 {
+  width: 45%;
+}
+
+
+/* Font sizing & heading spacing */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .font-1 {
+    font-size: 1.2rem;
+  }
+  .font-2 {
+    font-size: 2.5rem;
+  }
+  .font-3 {
+    font-size: 2rem;
+  }
+  
+  .hire-button {
+    width: 7rem;
+    padding: 0.5rem;
+    margin: 2rem 0 8rem 0.8rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .heading {
+    margin-top: 13vh; }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .font-1 {
+    font-size: 1.3rem; }
+  .font-2 {
+    font-size: 2.8rem; }
+  .font-3 {
+    font-size: 2.5rem; }
+
+  .hire-button {
+    width: 8rem; }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .font-1 {
+    font-size: 1.4rem; }
+  .font-2 {
+    font-size: 3rem; }
+  .font-3 {
+    font-size: 3rem; }
+
+  .hire-button {
+    width: 10rem; }
+ }
