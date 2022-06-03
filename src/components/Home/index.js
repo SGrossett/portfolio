@@ -146,5 +146,4 @@ const projects = [
     demo: '',
     github: 'https://github.com/SGrossett/practice-final'
   },
-
 ]

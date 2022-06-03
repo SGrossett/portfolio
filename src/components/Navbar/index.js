@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './images/bwProfileLogo.png';
 import blackLogo from './images/profileLogo.png';
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import { BsGithub, BsMedium } from 'react-icons/bs';
 import { FaLinkedinIn } from 'react-icons/fa';
