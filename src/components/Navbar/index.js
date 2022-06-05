@@ -7,7 +7,7 @@ function ProfileNav() {
   return (
     <>
       <Navbar bg="dark" expand="sm" className="mb-3">
-        <Container fluid>
+        <Container>
           <Navbar.Brand href="#home">
             <img
               alt=""

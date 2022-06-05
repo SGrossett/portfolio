@@ -8,7 +8,7 @@ import { AiOutlineCopyrightCircle } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <Container className='d-flex footer-border mt-5' fluid>
+    <Container className='d-flex footer-border mt-5'>
       <Col className='d-flex mt-3'>
         <p className='mb-0 nav-padding text-white'>
           <span className='d-block pb-1 text-neonPink'>Built by: &nbsp;</span>
