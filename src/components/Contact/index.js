@@ -6,12 +6,12 @@ function Contact() {
     <Container className="contact-bg rounded-container">
       <Row className='mx-4 pt-5 pb-5'>
         <Col className='bg-primary px-3' lg={5} >
-          <h1 className='pt-3'>Contact</h1>
+          <h1 className='pt-3 contact-h1'>Contact</h1>
           <p> Not a fan of forms? Still get in touch and shoot me an email &nbsp;
             <em>
               <a 
                 href='mailto:selene.grossett@gmail.com'
-                className='text-black'
+                className='text-black font-bold'
               >here</a>
             </em>
             .

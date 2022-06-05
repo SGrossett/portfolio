@@ -1,9 +1,18 @@
 .contact-bg {
   background-color: #c7d0d8;
 }
+.context-h1 {
+  font-weight: 700;
+}
 .rounded-container {
   border-radius: 13px;
 }
 .form-control {
   border-radius: 0.5rem;
+}
+.form-label {
+  font-weight: 700;
+}
+.font-bold {
+  font-weight: bold;
 }
