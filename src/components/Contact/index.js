@@ -3,7 +3,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 
 function Contact() {
   return (
-    <Container className="contact-bg">
+    <Container className="contact-bg rounded-container">
       <Row className='mx-4 pt-5 pb-5'>
         <Col className='bg-primary px-3' lg={5} >
           <h1 className='pt-3'>Contact</h1>
