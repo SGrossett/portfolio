@@ -1,11 +1,12 @@
 import './contact.css';
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Stack, Image } from 'react-bootstrap';
+import laptopGirl from './images/laptopGirl.png';
 
 function Contact() {
   return (
     <Container className="contact-bg rounded-container">
       <Row className='mx-4 pt-5 pb-5'>
-        <Col className='bg-primary px-3' lg={5} >
+        <Col className='bg-primary px-3 ' lg={5} >
           <h1 className='pt-3 contact-h1'>Contact</h1>
           <p> Not a fan of forms? Still get in touch and shoot me an email &nbsp;
             <em>
@@ -16,6 +17,9 @@ function Contact() {
             </em>
             .
           </p>
+          <Col className='d-flex'>
+            <Image src={laptopGirl} />
+          </Col>
         </Col>
         <Col ></Col>
         <Col className='bg-secondary' lg={6}>
@@ -31,7 +35,7 @@ function Contact() {
             </Form.Group>
             <Form.Group className="mb-4" controlId="fromMessage">
               <Form.Label className='text-uppercase'>Message</Form.Label>
-              <Form.Control as="textarea" rows={5} />
+              <Form.Control as="textarea" rows={8} />
             </Form.Group>
             <Button variant="primary mb-2" type="submit">
               Send Message
