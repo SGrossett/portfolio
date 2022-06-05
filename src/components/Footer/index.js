@@ -7,7 +7,8 @@ import { BsGithub, BsMedium } from 'react-icons/bs';
 
 function Footer() {
   return (
-    <Container className='d-flex' fluid>
+    <Container className='d-flex footer-border mt-5' fluid>
+
       <Col className='d-flex'>
         <p className='mb-0 nav-padding text-white'>
           <span>Built by &nbsp;</span>
