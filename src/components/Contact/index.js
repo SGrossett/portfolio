@@ -5,7 +5,18 @@ function Contact() {
   return (
     <Container className="bg-white">
       <Row className='bg-success mx-5 pt-5 pb-5'>
-        <Col className='bg-primary mx-'>1</Col>
+        <Col className='bg-primary mx-'>
+          <h1>Contact</h1>
+          <p> Not a fan of forms? Still get in touch and shoot me an email &nbsp;
+            <em>
+              <a 
+                href='mailto:selene.grossett@gmail.com'
+                className='text-black'
+              >here</a>
+            </em>
+            .
+          </p>
+        </Col>
         <Col xs={1}></Col>
         <Col className='bg-secondary'>
           <Form>
