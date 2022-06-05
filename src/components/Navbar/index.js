@@ -3,9 +3,6 @@ import blackLogo from './images/profileLogo.png';
 import { Nav, Navbar, Container, Offcanvas } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 
-import { BsGithub, BsMedium } from 'react-icons/bs';
-import { FaLinkedinIn } from 'react-icons/fa';
-
 function ProfileNav() {
   return (
     <>
@@ -56,17 +53,7 @@ function ProfileNav() {
                   <Nav.Link className='text-white'>Contact</Nav.Link>
                 </LinkContainer>
               </Nav>
-              <Nav>
-                <Nav.Link href="https://github.com/SGrossett" target='_blank' className='text-white'>
-                  <BsGithub size={22} />
-                </Nav.Link>
-                <Nav.Link href="https://www.linkedin.com/in/selene-grossett/" target='_blank' className='text-white'>
-                  <FaLinkedinIn size={22} />
-                </Nav.Link>
-                <Nav.Link href="https://medium.com/@selene_816" target='_blank' className='text-white'>
-                  <BsMedium size={22} />
-                </Nav.Link>
-              </Nav>
+             
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>
