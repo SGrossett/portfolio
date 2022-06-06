@@ -22,6 +22,15 @@
 .text-bg {
   color: #000912;
 }
+.contact-button {
+  color: white;
+  background-color: #497ea9;
+  border-color: #000912;
+  width: 100%;
+  padding: 0.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 

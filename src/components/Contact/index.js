@@ -37,7 +37,7 @@ function Contact() {
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
               <Form.Control as="textarea" rows={8} />
             </Form.Group>
-            <Button variant="primary " type="submit">
+            <Button className='contact-button'  type="submit">
               Send Message
             </Button>
           </Form>
