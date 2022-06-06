@@ -17,6 +17,13 @@ const initialFormData = {
 function Contact() {
   const [formData, updateFormData] = useState(initialFormData);
 
+  const handleChange = (event) => {
+    updateFormData({
+      ...formData,
+      [event.target.name]: event.target.value.trim()
+    })
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -66,17 +73,17 @@ function Contact() {
         <Col ></Col>
         <Col className='b-secondary p-4 contact-bg rounded-container form-mobile' lg={6}>
           <Form className='pb-3 px-3' onSubmit={sendEmail}>
-            <Form.Group className="mb-3 pt-3" controlId="name">
+            <Form.Group className="mb-3 pt-3" controlId="formName">
               <Form.Label className='text-uppercase text-bg'>Full name</Form.Label>
-              <Form.Control type="text" />
+              <Form.Control onChange={handleChange} type="text" name='name' />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="email">
+            <Form.Group className="mb-3" controlId="fromEmail">
               <Form.Label className='text-uppercase text-bg'>Email</Form.Label>
-              <Form.Control type="email" />
+              <Form.Control onChange={handleChange} type="email" name='email' />
             </Form.Group>
-            <Form.Group className="mb-4" controlId="message">
+            <Form.Group className="mb-4" controlId="formMessage">
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
-              <Form.Control as="textarea" rows={8} />
+              <Form.Control onChange={handleChange} as="textarea" name='message' rows={8} />
             </Form.Group>
             <Button className='contact-button'  type="submit">
               Send Message
