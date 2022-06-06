@@ -2,6 +2,7 @@ import './contact.css';
 import { Fragment } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 
+import emailjs from 'emailjs-com';
 import Media from 'react-media';
 import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
