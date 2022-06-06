@@ -17,6 +17,7 @@ function Contact() {
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         alert(`Thank you! Your message has been sent.`);
+        event.target.reset();
     }, function(err) {
         console.log('FAILED...', err);
     });
