@@ -1,13 +1,11 @@
 import './contact.css';
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 
 import emailjs from 'emailjs-com';
 import Media from 'react-media';
 import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
-import excitedGirl from './images/excited-laptopGirl.png';
-
 
 function Contact() {
     const sendEmail = (event) => {
@@ -25,8 +23,8 @@ function Contact() {
 
   return (
     <Container className="contact-container">
-      <Row className='mx-4 '>
-        <Col className='b-primary px-3' lg={5} >
+      <Row className='mx-4'>
+        <Col className='px-3' lg={5} >
           <h1 className='pb-1 contact-h1 text-info'>Contact</h1>
           <p className='text-info2'>Get in touch or email me directly &nbsp;
             <em>
