@@ -8,31 +8,18 @@ import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
 import excitedGirl from './images/excited-laptopGirl.png';
 
-const initialFormData = {
-  name: '',
-  email: '',
-  message: '',
-};
 
 function Contact() {
-  const [formData, updateFormData] = useState(initialFormData);
+    const sendEmail = (event) => {
+    event.preventDefault();
 
-  const handleChange = (event) => {
-    updateFormData({
-      ...formData,
-      [event.target.name]: event.target.value.trim()
-    })
-  }
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_jthh8vb', 'portfolio_template', form.current, 'nmR3oYZoLBroxDeLt')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    emailjs.sendForm('gmail', 'portfolio_template', event.target, 'nmR3oYZoLBroxDeLt')
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert(`Thank you! Your message has been sent.`);
+    }, function(err) {
+        console.log('FAILED...', err);
+    });
   }
 
   return (
@@ -75,15 +62,15 @@ function Contact() {
           <Form className='pb-3 px-3' onSubmit={sendEmail}>
             <Form.Group className="mb-3 pt-3" controlId="formName">
               <Form.Label className='text-uppercase text-bg'>Full name</Form.Label>
-              <Form.Control onChange={handleChange} type="text" name='name' />
+              <Form.Control type="text" name='name' />
             </Form.Group>
             <Form.Group className="mb-3" controlId="fromEmail">
               <Form.Label className='text-uppercase text-bg'>Email</Form.Label>
-              <Form.Control onChange={handleChange} type="email" name='email' />
+              <Form.Control type="email" name='email' />
             </Form.Group>
             <Form.Group className="mb-4" controlId="formMessage">
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
-              <Form.Control onChange={handleChange} as="textarea" name='message' rows={8} />
+              <Form.Control as="textarea" name='message' rows={8} />
             </Form.Group>
             <Button className='contact-button'  type="submit">
               Send Message
