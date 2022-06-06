@@ -29,11 +29,6 @@ function Contact() {
           }}>
             {matches => (
               <Fragment>
-                {/* {matches.small && 
-                  <Col className='d-flex justify-content-center mt-5'>
-                    <Image src={excitedGirl}/>
-                  </Col>
-                } */}
                 {matches.medium && 
                 <Col className='d-flex justify-content-center mt-4'>
                   <Image src={laptopGirl}/>
@@ -47,23 +42,19 @@ function Contact() {
               </Fragment>
             )}
           </Media>
-          {/* <Col className='d-flex justify-content-center mt-5'>
-            <Image src={arrowGirl}/>
-          </Col> */}
         </Col>
         <Col ></Col>
         <Col className='b-secondary p-4 contact-bg rounded-container form-mobile' lg={6}>
           <Form className='pb-3 px-3'>
-            <Form.Group className="mb-3 pt-3" controlId="formName">
+            <Form.Group className="mb-3 pt-3" controlId="name">
               <Form.Label className='text-uppercase text-bg'>Full name</Form.Label>
               <Form.Control type="text" />
             </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formEmail">
+            <Form.Group className="mb-3" controlId="email">
               <Form.Label className='text-uppercase text-bg'>Email</Form.Label>
               <Form.Control type="email" />
             </Form.Group>
-            <Form.Group className="mb-4" controlId="fromMessage">
+            <Form.Group className="mb-4" controlId="message">
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
               <Form.Control as="textarea" rows={8} />
             </Form.Group>
