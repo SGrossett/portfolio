@@ -9,6 +9,18 @@ import laptopGirl from './images/sharp-laptopGirl.png';
 import excitedGirl from './images/excited-laptopGirl.png';
 
 function Contact() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  }
+
   return (
     <Container className="contact-container">
       <Row className='mx-4 '>
@@ -46,7 +58,7 @@ function Contact() {
         </Col>
         <Col ></Col>
         <Col className='b-secondary p-4 contact-bg rounded-container form-mobile' lg={6}>
-          <Form className='pb-3 px-3'>
+          <Form className='pb-3 px-3' onSubmit={sendEmail}>
             <Form.Group className="mb-3 pt-3" controlId="name">
               <Form.Label className='text-uppercase text-bg'>Full name</Form.Label>
               <Form.Control type="text" />
