@@ -1,5 +1,5 @@
 import './contact.css';
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 
 import emailjs from 'emailjs-com';
@@ -8,12 +8,19 @@ import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
 import excitedGirl from './images/excited-laptopGirl.png';
 
+const initialFormData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 function Contact() {
+  const [formData, updateFormData] = useState(initialFormData);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_jthh8vb', 'portfolio_template', form.current, 'nmR3oYZoLBroxDeLt')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
