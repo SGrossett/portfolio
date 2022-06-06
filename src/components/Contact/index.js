@@ -1,13 +1,13 @@
 import './contact.css';
-import { Container, Row, Col, Form, Button, Stack, Image } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
 import laptopGirl from './images/laptopGirl-arrow.png';
 
 function Contact() {
   return (
-    <Container className="">
+    <Container className="contact-container">
       <Row className='mx-4 '>
-        <Col className='b-primary px-3 b-image' lg={5} >
-          <h1 className='pt-3 contact-h1 text-info'>Contact</h1>
+        <Col className='b-primary px-3' lg={5} >
+          <h1 className='pb-1 contact-h1 text-info'>Contact</h1>
           <p> Not a fan of forms? Still get in touch and shoot me an email &nbsp;
             <em>
               <a 
@@ -22,9 +22,8 @@ function Contact() {
           </Col>
         </Col>
         <Col ></Col>
-        <Col className='b-secondary p-4 contact-bg rounded-containerlaptopGirl-
-        ' lg={6}>
-          <Form className='pb-3'>
+        <Col className='b-secondary p-4 contact-bg rounded-container' lg={6}>
+          <Form className='pb-3 px-3'>
             <Form.Group className="mb-3 pt-3" controlId="formName">
               <Form.Label className='text-uppercase text-info'>Full name</Form.Label>
               <Form.Control type="text" />
@@ -38,7 +37,7 @@ function Contact() {
               <Form.Label className='text-uppercase text-info'>Message</Form.Label>
               <Form.Control as="textarea" rows={8} />
             </Form.Group>
-            <Button variant="primary mb-2" type="submit">
+            <Button variant="primary " type="submit">
               Send Message
             </Button>
           </Form>
