@@ -1,6 +1,10 @@
 import './contact.css';
+import { Fragment } from 'react';
 import { Container, Row, Col, Form, Button, Image } from 'react-bootstrap';
-import laptopGirl from './images/laptopGirl-arrow.png';
+
+import Media from 'react-media';
+import arrowGirl from './images/laptopGirl-arrow.png';
+
 
 function Contact() {
   return (
@@ -18,7 +22,7 @@ function Contact() {
             .
           </p>
           <Col className='d-flex justify-content-center mt-5'>
-            <Image src={laptopGirl}/>
+            <Image src={arrowGirl}/>
           </Col>
         </Col>
         <Col ></Col>
