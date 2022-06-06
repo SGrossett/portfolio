@@ -16,3 +16,6 @@
 .font-bold {
   font-weight: bold;
 }
+.bg-image {
+  background-image: url(./images/shapes.png);
+}
