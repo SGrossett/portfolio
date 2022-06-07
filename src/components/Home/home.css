@@ -51,6 +51,7 @@ body {
   width: 6rem;
   padding: 0.4rem;
   margin: 2rem 0 6rem 0.8rem;
+  font-weight: 600;
 }
 
 .w-45 {
@@ -136,5 +137,8 @@ body {
     font-size: 4.4rem; }
 
   .hire-button {
-    width: 10rem; }
+    width: 12rem; 
+    padding: 0.8em;
+    font-size: 1rem;
+  }
  }
