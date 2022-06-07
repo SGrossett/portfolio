@@ -36,29 +36,6 @@
   font-weight: 600;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-  .font-1 {
-    font-size: 1.2rem;
-  }
-  .font-2 {
-    font-size: 2.5rem;
-  }
-  .font-3 {
-    font-size: 2rem;
-  }
-  
-  .hire-button {
-    width: 7rem;
-    padding: 0.5rem;
-    margin: 2rem 0 8rem 0.8rem;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-  
-}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 

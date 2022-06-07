@@ -61,7 +61,7 @@ body {
 /* Font sizing & heading spacing */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
+@media (min-width: 576px) and (max-width: 767px) { 
   .font-1 {
     font-size: 1.2rem;
   }
@@ -85,27 +85,55 @@ body {
     margin-top: 13vh; }
 }
 
+@media (min-width: 768px) and (max-width:991px) { 
+  .font-1 {
+    font-size: 1.2rem;
+  }
+  .font-2 {
+    font-size: 2.7rem;
+  }
+  .font-3 {
+    font-size: 2.7rem;
+  }
+
+  .heading {
+    margin-top: 13vh; }
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) { 
   .font-1 {
     font-size: 1.3rem; }
   .font-2 {
-    font-size: 2.8rem; }
+    font-size: 3rem; }
   .font-3 {
-    font-size: 2.5rem; }
+    font-size: 3rem; }
 
   .hire-button {
     width: 8rem; }
  }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) and (max-width: 1399px) { 
   .font-1 {
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
   .font-2 {
-    font-size: 3rem; }
+    font-size: 3.5rem; }
   .font-3 {
-    font-size: 3rem; }
+    font-size: 3.5rem; }
+
+  .hire-button {
+    width: 10rem; }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) { 
+  .font-1 {
+    font-size: 1.7rem; }
+  .font-2 {
+    font-size: 4.4rem; }
+  .font-3 {
+    font-size: 4.4rem; }
 
   .hire-button {
     width: 10rem; }
