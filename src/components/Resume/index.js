@@ -1,6 +1,9 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import './images/Selene_Grossett_Resume.pdf';
 
 function Resume() {
+  const resumeURL = 'https://docs.google.com/document/d/e/2PACX-1vSysddCjlw7sc3Mj52GspP0OcKkKh2cSFu8fXM6Pcex2WGpg0EuFx1tcrk9gMiR1V0peZi0ES4I81FS/pub?embedded=true';
+  
   return (
     <Container className="contact-container">
       <Row className='mx-4'>
@@ -17,7 +20,17 @@ function Resume() {
           </p>
         </Col>
       </Row>
+      <Row>
+        <iframe
+          src={resumeURL}
+          frameBorder="0"
+          scrolling="auto"
+          title="My Resume"
+          className=''
+          >
 
+        </iframe>
+      </Row>
     </Container> 
   )
 }
