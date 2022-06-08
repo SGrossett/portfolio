@@ -1,6 +1,9 @@
 import './resume.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import resumePDF from './Selene_Grossett_Resume.pdf';
+import { Document, Page, pdfjs } from 'react-pdf';
+import PDF from './Selene_Grossett_Resume.pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function Resume() {
   const resumeURL = 'https://docs.google.com/document/d/e/2PACX-1vSysddCjlw7sc3Mj52GspP0OcKkKh2cSFu8fXM6Pcex2WGpg0EuFx1tcrk9gMiR1V0peZi0ES4I81FS/pub?embedded=true';
@@ -21,7 +24,7 @@ function Resume() {
           </p>
         </Col>
       </Row>
-      <Row>
+      <Row className='preview-row mt-5'>
         {/* <iframe
           src={resumeURL}
           frameBorder="0"
@@ -29,11 +32,16 @@ function Resume() {
           title="My Resume"
           className=''
           > */}
-        <iframe 
-          src={resumePDF + '#toolbar=0'} 
-          title='My Resume'  
-        />
-        
+          <iframe 
+            src={`${PDF}#view=fitH&toolbar=0`} 
+            title='My Resume'
+            scrolling='auto'
+            className='mt-4'
+          />
+
+        {/* <Document file={PDF} onContextMenu={(e) => e.preventDefault()}>
+          <Page pageNumber={1} />
+        </Document>       */}
       </Row>
     </Container> 
   )
