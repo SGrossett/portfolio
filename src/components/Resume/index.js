@@ -21,13 +21,6 @@ function Resume() {
         </Col>
       </Row>
       <Row className='preview-row mt-5'>
-        {/* <iframe
-          src={resumeURL}
-          frameBorder="0"
-          scrolling="auto"
-          title="My Resume"
-          className=''
-          > */}
           <iframe 
             src={`${PDF}#view=fitH&toolbar=0`} 
             title='My Resume'
