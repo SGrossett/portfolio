@@ -53,13 +53,6 @@ margin-right: auto;
   
 }
 
-@media (min-width: 992px) { 
-  iframe {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399px) { 
   iframe {

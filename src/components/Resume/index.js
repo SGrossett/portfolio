@@ -9,7 +9,7 @@ function Resume() {
       <Row className='mx-4'>
         <Col className='px-3'>
           <h1 className='pb-1 contact-h1 text-info'>Resume</h1>
-          <p className='text-info2'>Reach out on my contact page or click to &nbsp; 
+          <p className='text-info2 '>Reach out on my contact page or click to &nbsp; 
             <em>
               <a 
                 href='mailto:selene.grossett@gmail.com'
