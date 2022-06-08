@@ -30,7 +30,7 @@ function Resume() {
           className=''
           > */}
         <iframe 
-          src={resumePDF} 
+          src={resumePDF + '#toolbar=0'} 
           title='My Resume'  
         />
         
