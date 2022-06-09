@@ -63,6 +63,25 @@ function Resume() {
                   </ul>
                 </Card.Body>
               </Card>
+              <Card bg='white'>
+                <Card.Header><h5>Work Experience</h5></Card.Header>
+                <Card.Body>
+                
+                </Card.Body>
+              </Card>
+              <Card bg='white'>
+                <Card.Header><h5>Education</h5></Card.Header>
+                <Card.Body>
+                
+                </Card.Body>
+              </Card>
+              <Card bg='white'>
+                <Card.Header><h5>Certifications</h5></Card.Header>
+                <Card.Body>
+                
+                </Card.Body>
+              </Card>
+              
             </Container> : '' }
         </Col>
       </Row>
