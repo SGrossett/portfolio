@@ -48,15 +48,15 @@ function Resume() {
                 <Card.Header><h5>Skills</h5></Card.Header>
                 <Card.Body>
                   <ul className='list-group list-group-flush'>
-                    <li className='list-group-item border-none'>
+                    <li className='list-group-item'>
                       <p className='font-bold mb-1'>Programming Languages & Database</p>
                       <p>JavaScript, Python, C++, Ruby, JSX, SQL, PHP, MySQL, PostgreSQL</p>
                     </li>
-                    <li className='list-group-item border-none'>
+                    <li className='list-group-item'>
                       <p className='font-bold mb-1'>Frameworks & Libraries</p>
                       <p>React, Node.js, Next.js, Bootstrap, jQuery, Mocha, Axios, Ajax, Express, Chai</p>
                     </li>
-                    <li className='list-group-item border-none'>
+                    <li className='list-group-item'>
                       <p className='font-bold mb-1'>Markup & Styling</p>
                       <p>JHTML, CSS, SCSS, Tailwind CSS</p>
                     </li>
@@ -66,7 +66,25 @@ function Resume() {
               <Card bg='white'>
                 <Card.Header><h5>Work Experience</h5></Card.Header>
                 <Card.Body>
-                
+                  <ul className='list-group list-group-flush'>
+                    <li className='list-group-item'>
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-0 font-bold">Self-Employed</h5>
+                        <small>Brantford</small>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">Private STEM & Special Needs Tutor</p>
+                        <small>September 2015 – Present</small>
+                      </div>
+                      <ul>
+                        <li>Educate average, advanced, and learning disabled students in Math, English, and STEM course materials.</li>
+                        <li>Formulate lesson plans to strengthen academic performance for optimal outcomes.</li>
+                      </ul>
+                    </li>
+                    
+                    	  
+
+                  </ul>
                 </Card.Body>
               </Card>
               <Card bg='white'>
