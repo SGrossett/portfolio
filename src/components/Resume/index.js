@@ -1,6 +1,6 @@
 import './resume.css';
 import { useState } from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import PDF from './Selene_Grossett_Resume.pdf';
 
 function Resume() {
@@ -41,8 +41,16 @@ function Resume() {
         </Col>
       </Row>
       <Row>
-        <Col>
-          {showMore ? 'You should be seeing all this' : '' }
+        <Col className='mt-5'>
+          {showMore ? 
+            <Container>
+              <Card bg='white'>
+                <Card.Header><h5>Skills</h5></Card.Header>
+                <Card.Body>
+                  
+                </Card.Body>
+              </Card>
+            </Container> : '' }
         </Col>
       </Row>
     </Container> 
