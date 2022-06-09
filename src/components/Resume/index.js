@@ -1,8 +1,10 @@
 import './resume.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import PDF from './Selene_Grossett_Resume.pdf';
 
 function Resume() {
+  const [showMore, setShowMore] = useState(false);
 
   return (
     <Container className="contact-container">
@@ -27,6 +29,16 @@ function Resume() {
             scrolling='auto'
             className='mt-4'
           />
+      </Row>
+      <Row className='container'>
+        <Col>
+          <Button 
+            variant='info w-25 p-2 mt-5 text-uppercase font-bold'
+            onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? 'Minimize Resume' : 'Complete Resume Overview'}
+          </Button>
+        </Col>
       </Row>
     </Container> 
   )

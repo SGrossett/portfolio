@@ -63,7 +63,7 @@ margin-right: auto;
  /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1400px) { 
   iframe {
-    height: 54rem;
+    height: 47rem;
   }
   
 }
