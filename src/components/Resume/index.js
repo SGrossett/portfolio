@@ -1,6 +1,6 @@
 import './resume.css';
 import { useState } from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
 import PDF from './Selene_Grossett_Resume.pdf';
 
 function Resume() {
@@ -188,7 +188,89 @@ function Resume() {
               <Card bg='white'>
                 <Card.Header><h5>Certifications</h5></Card.Header>
                 <Card.Body>
-                
+                  <Carousel>
+                    <Carousel.Item>
+                      <Row>
+                        <Col class="mb-3">
+                          <Card>
+                            <Card.Img variant='top' src='' />
+                            <Card.Body>
+                                <Card.Title>Card 1</Card.Title>
+                                <Card.Text>Description</Card.Text>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                        <Col class="mb-3">
+                          <Card>
+                            <Card.Img variant='top' src='' />
+                            <Card.Body>
+                                <Card.Title>Card 2</Card.Title>
+                                <Card.Text>Description</Card.Text>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                        <Col class="mb-3">
+                          <Card>
+                            <Card.Img variant='top' src='' />
+                            <Card.Body>
+                                <Card.Title>Card 3</Card.Title>
+                                <Card.Text>Description</Card.Text>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                        <Col class="mb-3">
+                          <Card>
+                            <Card.Img variant='top' src='' />
+                            <Card.Body>
+                                <Card.Title>Card 4</Card.Title>
+                                <Card.Text>Description</Card.Text>
+                            </Card.Body>
+                          </Card>
+                        </Col>
+                      </Row>
+                      <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                      <Row>
+                        <Col>
+                          Slide 2
+                        </Col>
+                      </Row>
+
+                      <Carousel.Caption>
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Row>
+                        <Col>
+                          Slide 3
+                        </Col>
+                      </Row>
+
+                      <Carousel.Caption>
+                        <h3>Third slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Row>
+                        <Col>
+                          Slide 4
+                        </Col>
+                      </Row>
+
+                      <Carousel.Caption>
+                        <h3>Forth slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </Carousel.Caption>
+                    </Carousel.Item>
+                  </Carousel>
                 </Card.Body>
               </Card>
               
