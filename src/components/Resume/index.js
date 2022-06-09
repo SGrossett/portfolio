@@ -49,15 +49,15 @@ function Resume() {
                 <Card.Body>
                   <ul className='list-group list-group-flush'>
                     <li className='list-group-item'>
-                      <p className='font-bold mb-1'>Programming Languages & Database</p>
+                      <h5 className='font-bold mb-1'>Programming Languages & Database</h5>
                       <p>JavaScript, Python, C++, Ruby, JSX, SQL, PHP, MySQL, PostgreSQL</p>
                     </li>
                     <li className='list-group-item'>
-                      <p className='font-bold mb-1'>Frameworks & Libraries</p>
+                      <h5 className='font-bold mb-1'>Frameworks & Libraries</h5>
                       <p>React, Node.js, Next.js, Bootstrap, jQuery, Mocha, Axios, Ajax, Express, Chai</p>
                     </li>
                     <li className='list-group-item'>
-                      <p className='font-bold mb-1'>Markup & Styling</p>
+                      <h5 className='font-bold mb-1'>Markup & Styling</h5>
                       <p>JHTML, CSS, SCSS, Tailwind CSS</p>
                     </li>
                   </ul>
@@ -141,9 +141,15 @@ function Resume() {
                         <li>Responsible for the UI design.</li>
                       </ul>
                     </li>
-                    
-                    	  
-
+                    <li className='list-group-item d-flex'>
+                      <a 
+                        href='https://www.linkedin.com/in/selene-grossett/details/experience/' 
+                        target='_blank'
+                        className='ml-auto'
+                      >
+                        View full work experience on LinkedIn
+                      </a>
+                    </li>
                   </ul>
                 </Card.Body>
               </Card>
