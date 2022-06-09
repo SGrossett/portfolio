@@ -81,6 +81,62 @@ function Resume() {
                         <li>Formulate lesson plans to strengthen academic performance for optimal outcomes.</li>
                       </ul>
                     </li>
+                    <li className='list-group-item'>
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-0 font-bold">Frontline Consulting</h5>
+                        <small>Edmonton, Alberta</small>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">Software Developer</p>
+                        <small>March 2022 - April 2022</small>
+                      </div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </li>
+                    <li className='list-group-item'>
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-0 font-bold">Halycon IQ</h5>
+                        <small>Toronto, Ontario</small>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">Full Stack Web Developer</p>
+                        <small>February 2022 - April 2022</small>
+                      </div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </li>
+                    <li className='list-group-item'>
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-0 font-bold">IndiGrowth Health & Wellness</h5>
+                        <small>Victoria, British Columbia</small>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">Web Developer</p>
+                        <small>February 2022 - March 2022</small>
+                      </div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </li>
+                    <li className='list-group-item'>
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-0 font-bold">Nanotech Innovation</h5>
+                        <small>Toronto, Ontario</small>
+                      </div>
+                      <div class="d-flex w-100 justify-content-between">
+                        <p class="mb-1">Website Design</p>
+                        <small>February 2022 - March 2022</small>
+                      </div>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                    </li>
                     
                     	  
 
