@@ -40,6 +40,11 @@ function Resume() {
           </Button>
         </Col>
       </Row>
+      <Row>
+        <Col>
+          {showMore ? 'You should be seeing all this' : '' }
+        </Col>
+      </Row>
     </Container> 
   )
 }
