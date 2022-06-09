@@ -91,8 +91,9 @@ function Resume() {
                         <small>March 2022 - April 2022</small>
                       </div>
                       <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Worked on the Level Up - Website Development project through Riipen involving two other team members to build a hockey league tournament scoreboard and scheduler.</li>
+                        <li>Redesigned a WordPress site to implement scalable frontend templates and design modules.</li>
+                        <li>Responsible for creating the scoreboard, tournament bracket functionality, and user/tournament registration.</li>
                       </ul>
                     </li>
                     <li className='list-group-item'>
@@ -105,8 +106,9 @@ function Resume() {
                         <small>February 2022 - April 2022</small>
                       </div>
                       <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Collaborated with four other team members to spearhead a new brand and design system for MarkitIQ, an advertising website that allows users to buy, sell, or trade items.</li>
+                        <li>Created accessible, responsive, and functional user interfaces to allow visitors on any device to have the same perfect user experience.</li>
+                        <li>Responsible for the UX and UI designs and implementing the code for the product display pages.</li>
                       </ul>
                     </li>
                     <li className='list-group-item'>
@@ -119,8 +121,9 @@ function Resume() {
                         <small>February 2022 - March 2022</small>
                       </div>
                       <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Worked on the Online Health Services Section for Health and Wellness Website project through Riipen involving four other team members in order to launch a new site with added services.</li>
+                        <li>Performed database and code optimization for WordPress using JavaScript, HTML, and CSS.</li>
+                        <li>Responsible for the Health Services and Counselling Landing pages.</li>
                       </ul>
                     </li>
                     <li className='list-group-item'>
@@ -133,8 +136,9 @@ function Resume() {
                         <small>February 2022 - March 2022</small>
                       </div>
                       <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Worked closely with a small team to develop the site design, navigation and functionality for various landing pages and ad campaigns.</li>
+                        <li>Created interactive prototypes and conducted user testing.</li>
+                        <li>Responsible for the UI design.</li>
                       </ul>
                     </li>
                     
