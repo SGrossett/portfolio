@@ -47,16 +47,16 @@ function Resume() {
               <Card bg='white'>
                 <Card.Header><h5>Skills</h5></Card.Header>
                 <Card.Body>
-                  <ul>
-                    <li>
+                  <ul className='list-group list-group-flush'>
+                    <li className='list-group-item border-none'>
                       <p className='font-bold mb-1'>Programming Languages & Database</p>
                       <p>JavaScript, Python, C++, Ruby, JSX, SQL, PHP, MySQL, PostgreSQL</p>
                     </li>
-                    <li>
+                    <li className='list-group-item border-none'>
                       <p className='font-bold mb-1'>Frameworks & Libraries</p>
                       <p>React, Node.js, Next.js, Bootstrap, jQuery, Mocha, Axios, Ajax, Express, Chai</p>
                     </li>
-                    <li>
+                    <li className='list-group-item border-none'>
                       <p className='font-bold mb-1'>Markup & Styling</p>
                       <p>JHTML, CSS, SCSS, Tailwind CSS</p>
                     </li>
