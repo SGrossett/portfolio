@@ -70,10 +70,10 @@ function Resume() {
                     <li className='list-group-item'>
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-0 font-bold">Self-Employed</h5>
-                        <small>Brantford</small>
+                        <medium className='font-bold'>Brantford</medium>
                       </div>
                       <div class="d-flex w-100 justify-content-between">
-                        <p class="mb-1">Private STEM & Special Needs Tutor</p>
+                        <p class="mb-1 font-italic">Private STEM & Special Needs Tutor</p>
                         <small>September 2015 – Present</small>
                       </div>
                       <ul>
@@ -84,10 +84,10 @@ function Resume() {
                     <li className='list-group-item'>
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-0 font-bold">Frontline Consulting</h5>
-                        <small>Edmonton, Alberta</small>
+                        <medium className='font-bold'>Edmonton, Alberta</medium>
                       </div>
                       <div class="d-flex w-100 justify-content-between">
-                        <p class="mb-1">Software Developer</p>
+                        <p class="mb-1 font-italic">Software Developer</p>
                         <small>March 2022 - April 2022</small>
                       </div>
                       <ul>
@@ -98,10 +98,10 @@ function Resume() {
                     <li className='list-group-item'>
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-0 font-bold">Halycon IQ</h5>
-                        <small>Toronto, Ontario</small>
+                        <medium className='font-bold'>Toronto, Ontario</medium>
                       </div>
                       <div class="d-flex w-100 justify-content-between">
-                        <p class="mb-1">Full Stack Web Developer</p>
+                        <p class="mb-1 font-italic">Full Stack Web Developer</p>
                         <small>February 2022 - April 2022</small>
                       </div>
                       <ul>
@@ -112,10 +112,10 @@ function Resume() {
                     <li className='list-group-item'>
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-0 font-bold">IndiGrowth Health & Wellness</h5>
-                        <small>Victoria, British Columbia</small>
+                        <medium className='font-bold'>Victoria, British Columbia</medium>
                       </div>
                       <div class="d-flex w-100 justify-content-between">
-                        <p class="mb-1">Web Developer</p>
+                        <p class="mb-1 font-italic">Web Developer</p>
                         <small>February 2022 - March 2022</small>
                       </div>
                       <ul>
@@ -126,10 +126,10 @@ function Resume() {
                     <li className='list-group-item'>
                       <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-0 font-bold">Nanotech Innovation</h5>
-                        <small>Toronto, Ontario</small>
+                        <medium className='font-bold'>Toronto, Ontario</medium>
                       </div>
                       <div class="d-flex w-100 justify-content-between">
-                        <p class="mb-1">Website Design</p>
+                        <p class="mb-1 font-italic">Website Design</p>
                         <small>February 2022 - March 2022</small>
                       </div>
                       <ul>
