@@ -164,7 +164,7 @@ function Resume() {
                       </div>
                       <div class="d-flex w-100 justify-content-between">
                         <p class="mb-1 font-italic">Full Stack Web Development</p>
-                        <small>Graduation Date: February 2022</small>
+                        <small class="font-italic">Graduation Date: February 2022</small>
                       </div>
                     </li>
                     <li className='list-group-item'>
@@ -174,12 +174,12 @@ function Resume() {
                       </div>
                       <div class="d-flex w-100 justify-content-between">
                         <p class="mb-1 font-italic">Bachelor of Science in Applied Mathematics (summa cum laude)</p>
-                        <small>Graduation Date: May 2019</small>
+                        <small class="font-italic">Graduation Date: May 2019</small>
                       </div>
-                      <ul>
-                        <li>GPA: 3.93</li>
-                        <li>Key Courses: Discrete Structures, Computer Logic Design, Advanced Computer Networking, Programming Languages </li>
-                        <li>Organizations/Awards: Alpha Chi National Honor Society, Dean’s List, Chandler Foundation, United Givings</li>
+                      <ul className='mt-1'>
+                        <li><strong>GPA:</strong> 3.93</li>
+                        <li><strong>Key Courses:</strong> Discrete Structures, Computer Logic Design, Advanced Computer Networking, Programming Languages </li>
+                        <li><strong>Organizations/Awards:</strong> Alpha Chi National Honor Society, Dean’s List, Chandler Foundation, United Givings</li>
                       </ul>
                     </li>
                   </ul>
