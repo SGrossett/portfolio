@@ -1,7 +1,27 @@
 import './resume.css';
 import { useState } from 'react';
 import { Container, Row, Col, Button, Card, Carousel } from 'react-bootstrap';
+// import { slide1_certs, slide2_certs, slide3_certs, slide4_certs } from './certifications/Certs.js';
+
+import PFE from './images/PFE-cert.jpg';
+import PDS from './images/PDS-cert.jpg';
+import SDET from './images/SDET-cert.jpg';
+import OODS from './images/OODS-cert.jpg';
+import L2SK from './images/L2SK-cert.jpg';
+import UPAW from './images/UPAW-cert.jpg';
+import CVDP from './images/CVDP-cert.jpg';
+import CCP from './images/CCP-cert.jpg';
+import UPOS from './images/UPOS-cert.jpg';
+import PFDU from './images/PFDU-cert.jpg';
+import I2H from './images/I2H-cert.jpg';
+import UDWP from './images/UDWP-cert.jpg';
+import I2C from './images/I2C-cert.jpg';
+import JADS from './images/JADS-cert.jpg';
+import PS from './images/python-specialization.jpg';
+import FSK from './images/FSK-cert.jpg';
+
 import PDF from './Selene_Grossett_Resume.pdf';
+// import { slide1_certs } from './certifications/certs';
 
 function Resume() {
   const [showMore, setShowMore] = useState(false);
@@ -191,42 +211,17 @@ function Resume() {
                   <Carousel>
                     <Carousel.Item>
                       <Row>
-                        <Col class="mb-3">
-                          <Card>
-                            <Card.Img variant='top' src='' />
-                            <Card.Body>
-                                <Card.Title>Card 1</Card.Title>
-                                <Card.Text>Description</Card.Text>
-                            </Card.Body>
-                          </Card>
+                        {slide1_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
                         </Col>
-                        <Col class="mb-3">
-                          <Card>
-                            <Card.Img variant='top' src='' />
-                            <Card.Body>
-                                <Card.Title>Card 2</Card.Title>
-                                <Card.Text>Description</Card.Text>
-                            </Card.Body>
-                          </Card>
-                        </Col>
-                        <Col class="mb-3">
-                          <Card>
-                            <Card.Img variant='top' src='' />
-                            <Card.Body>
-                                <Card.Title>Card 3</Card.Title>
-                                <Card.Text>Description</Card.Text>
-                            </Card.Body>
-                          </Card>
-                        </Col>
-                        <Col class="mb-3">
-                          <Card>
-                            <Card.Img variant='top' src='' />
-                            <Card.Body>
-                                <Card.Title>Card 4</Card.Title>
-                                <Card.Text>Description</Card.Text>
-                            </Card.Body>
-                          </Card>
-                        </Col>
+                        ))}
                       </Row>
                       <Carousel.Caption>
                         <h3>First slide label</h3>
@@ -281,4 +276,96 @@ function Resume() {
   )
 }
 
-export default Resume
+export default Resume;
+
+const slide1_certs = [
+  {
+    imgage: PS,
+    title: 'Python for Everybody Specialization',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: JADS,
+    title: 'JavaScript Algorithms and Data Structures',
+    description: 'freeCodeCamp'
+  },
+  {
+    imgage: UPOS,
+    title: 'Using Python to Interact witht the Operating System',
+    description: 'Google'
+  },
+  {
+    imgage: OODS,
+    title: 'Object-Oriented Data Structures in C++',
+    description: 'University of Illinois at Urbana-Champaign'
+  },
+]
+
+const slide2_certs = [
+  {
+    imgage: CCP,
+    title: 'Crash Course on Python',
+    description: 'Google'
+  },
+  {
+    imgage: PFDU,
+    title: 'Programming Foundations with JavaScript, HTML, and CSS',
+    description: 'Duke University'
+  },
+  {
+    imgage: SDET,
+    title: 'Smart Devices & Mobile Emerging Technologies',
+    description: 'Yonsei University'
+  },
+  {
+    imgage: UDWP,
+    title: 'Using Databases with Python',
+    description: 'University of Michigan'
+  },
+]
+
+const slide3_certs = [
+  {
+    imgage: FSK,
+    title: 'First Step Korean',
+    description: 'Yonsei University'
+  },
+  {
+    imgage: PFE,
+    title: 'Programming for Everybody (Getting Started with Python)',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: PDS,
+    title: 'Python Data Structures',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: UPAW,
+    title: 'Using Python to Access the Web',
+    description: 'University of Michigan'
+  },
+]
+
+const slide4_certs = [
+  {
+    imgage: L2SK,
+    title: 'Learn to Speak Korean 1',
+    description: 'Yonsei University'
+  },
+  {
+    imgage: CVDP,
+    title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: I2C,
+    title: 'Introduction to CSS3',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: I2H,
+    title: 'Introduction to HTML5',
+    description: 'University of Michigan'
+  }
+];
