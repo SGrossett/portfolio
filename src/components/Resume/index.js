@@ -223,47 +223,71 @@ function Resume() {
                         </Col>
                         ))}
                       </Row>
-                      <Carousel.Caption>
+                      {/* <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                      </Carousel.Caption>
+                      </Carousel.Caption> */}
                     </Carousel.Item>
 
                     <Carousel.Item>
                       <Row>
-                        <Col>
-                          Slide 2
+                      {slide2_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
                         </Col>
+                        ))}
                       </Row>
 
-                      <Carousel.Caption>
+                      {/* <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      </Carousel.Caption>
+                      </Carousel.Caption> */}
                     </Carousel.Item>
                     <Carousel.Item>
                       <Row>
-                        <Col>
-                          Slide 3
+                      {slide3_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
                         </Col>
+                        ))}
                       </Row>
 
-                      <Carousel.Caption>
+                      {/* <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                      </Carousel.Caption>
+                      </Carousel.Caption> */}
                     </Carousel.Item>
                     <Carousel.Item>
                       <Row>
-                        <Col>
-                          Slide 4
+                      {slide4_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
                         </Col>
+                        ))}
                       </Row>
 
-                      <Carousel.Caption>
+                      {/* <Carousel.Caption>
                         <h3>Forth slide label</h3>
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                      </Carousel.Caption>
+                      </Carousel.Caption> */}
                     </Carousel.Item>
                   </Carousel>
                 </Card.Body>
@@ -291,26 +315,26 @@ const slide1_certs = [
   },
   {
     imgage: UPOS,
-    title: 'Using Python to Interact witht the Operating System',
+    title: 'Using Python to Interact witht the Operating System ',
     description: 'Google'
   },
   {
-    imgage: OODS,
-    title: 'Object-Oriented Data Structures in C++',
-    description: 'University of Illinois at Urbana-Champaign'
+    imgage: PDS,
+    title: 'Python Data Structures',
+    description: 'University of Michigan'
   },
 ]
 
 const slide2_certs = [
   {
-    imgage: CCP,
-    title: 'Crash Course on Python',
-    description: 'Google'
-  },
-  {
     imgage: PFDU,
     title: 'Programming Foundations with JavaScript, HTML, and CSS',
     description: 'Duke University'
+  },
+  {
+    imgage: CCP,
+    title: 'Crash Course on Python',
+    description: 'Google'
   },
   {
     imgage: SDET,
@@ -336,9 +360,9 @@ const slide3_certs = [
     description: 'University of Michigan'
   },
   {
-    imgage: PDS,
-    title: 'Python Data Structures',
-    description: 'University of Michigan'
+    imgage: OODS,
+    title: 'Object-Oriented Data Structures in C++',
+    description: 'University of Illinois at Urbana-Champaign'
   },
   {
     imgage: UPAW,
@@ -349,11 +373,6 @@ const slide3_certs = [
 
 const slide4_certs = [
   {
-    imgage: L2SK,
-    title: 'Learn to Speak Korean 1',
-    description: 'Yonsei University'
-  },
-  {
     imgage: CVDP,
     title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
     description: 'University of Michigan'
@@ -362,6 +381,11 @@ const slide4_certs = [
     imgage: I2C,
     title: 'Introduction to CSS3',
     description: 'University of Michigan'
+  },
+  {
+    imgage: L2SK,
+    title: 'Learn to Speak Korean 1',
+    description: 'Yonsei University'
   },
   {
     imgage: I2H,
