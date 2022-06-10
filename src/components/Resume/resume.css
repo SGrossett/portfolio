@@ -1,0 +1,65 @@
+iframe {
+  height: 17rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+.preview-row {
+  overflow: hidden;
+  background-color: #c7d0d8;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-italic { 
+  font-style: italic;
+}
+
+@media (min-width: 440px) and (max-width: 575px) { 
+  iframe {
+    height: 22rem !important;
+  }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+  iframe {
+    height: 29rem !important;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  
+
+}
+
+@media (min-width: 768px) and (max-width:991px) { 
+  iframe {
+    height: 40rem;
+  }  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  iframe {
+    height: 42rem;
+  }
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  iframe {
+    height: 50rem;
+  }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) { 
+  iframe {
+    height: 47rem;
+  }
+  
+}
