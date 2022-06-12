@@ -32,6 +32,9 @@ body {
 .text-info2 {
   color: #93dae8;
 }
+.text-info-color {
+  color: #0dcaf0;
+}
 
 .ml-auto {
   margin-left: auto;
@@ -53,10 +56,23 @@ body {
   margin: 2rem 0 6rem 0.8rem;
   font-weight: 600;
 }
+.hire-button > a {
+  color:#0dcaf0;
+}
+.hire-button:hover > a {
+  color:#fff;
+}
 
 .resume-button {
+  background-color: #93dae8;
+}
+.resume-button > a {
+  color: #000912;
+}
+.resume-button:hover {
   background-color: #0dcaf0;
 }
+
 .text-bg {
   color: #000912;
 }
