@@ -54,6 +54,13 @@ body {
   font-weight: 600;
 }
 
+.resume-button {
+  background-color: #0dcaf0;
+}
+.text-bg {
+  color: #000912;
+}
+
 .w-45 {
   width: 45%;
 }

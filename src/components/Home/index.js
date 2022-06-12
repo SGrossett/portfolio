@@ -35,6 +35,9 @@ function HomePage() {
               <Button variant='outline-info hire-button'>
                 <Link to='/contact' className='text-decoration-none text-info'>Hire me!</Link>
               </Button>
+              <Button variant='outline-info hire-button resume-button'>
+                <Link to='/contact' className='text-decoration-none text-bg'>Resumé</Link>
+              </Button>
             
           </Row>
         </Stack>
