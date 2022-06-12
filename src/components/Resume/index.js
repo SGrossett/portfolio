@@ -19,6 +19,7 @@ import I2C from './images/I2C-cert.jpg';
 import JADS from './images/JADS-cert.jpg';
 import PS from './images/python-specialization.jpg';
 import FSK from './images/FSK-cert.jpg';
+import KAH from './images/KAH-cert.jpg';
 
 import PDF from './Selene_Grossett_Resume.pdf';
 // import { slide1_certs } from './certifications/certs';
@@ -53,7 +54,7 @@ function Resume() {
       <Row className='container'>
         <Col>
           <Button 
-            variant='info w-25 p-2 mt-5 text-uppercase font-bold'
+            variant='info p-2 mt-5 text-uppercase font-bold info-button'
             onClick={() => setShowMore(!showMore)}
             >
               {showMore ? 'Minimize Resume' : 'Complete Resume Overview'}
@@ -63,7 +64,7 @@ function Resume() {
       <Row>
         <Col className='mt-5'>
           {showMore ? 
-            <Container>
+            <Container className='showmore-container'>
               <Card bg='white'>
                 <Card.Header><h5>Skills</h5></Card.Header>
                 <Card.Body>
@@ -289,6 +290,46 @@ function Resume() {
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                       </Carousel.Caption> */}
                     </Carousel.Item>
+                    <Carousel.Item>
+                      <Row>
+                      {slide5_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
+                        </Col>
+                        ))}
+                      </Row>
+
+                      {/* <Carousel.Caption>
+                        <h3>Forth slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </Carousel.Caption> */}
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <Row>
+                      {slide6_certs.map((cert) => (
+                          <Col class="mb-3">
+                            <Card>
+                              <Card.Img variant='top' src={cert.imgage} />
+                              <Card.Body>
+                                  <Card.Title>{cert.title}</Card.Title>
+                                  <Card.Text>{cert.description}</Card.Text>
+                              </Card.Body>
+                            </Card>
+                        </Col>
+                        ))}
+                      </Row>
+
+                      {/* <Carousel.Caption>
+                        <h3>Forth slide label</h3>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                      </Carousel.Caption> */}
+                    </Carousel.Item>
                   </Carousel>
                 </Card.Body>
               </Card>
@@ -315,45 +356,48 @@ const slide1_certs = [
   },
   {
     imgage: UPOS,
-    title: 'Using Python to Interact witht the Operating System ',
+    title: 'Using Python to Interact witht the Operating System \n',
     description: 'Google'
-  },
+  }
+]
+
+const slide2_certs = [
   {
     imgage: PDS,
     title: 'Python Data Structures',
     description: 'University of Michigan'
   },
-]
-
-const slide2_certs = [
   {
     imgage: PFDU,
     title: 'Programming Foundations with JavaScript, HTML, and CSS',
     description: 'Duke University'
   },
   {
-    imgage: CCP,
-    title: 'Crash Course on Python',
-    description: 'Google'
-  },
-  {
     imgage: SDET,
     title: 'Smart Devices & Mobile Emerging Technologies',
     description: 'Yonsei University'
+  }
+]
+
+const slide3_certs = [
+  {
+    imgage: CCP,
+    title: 'Crash Course on Python',
+    description: 'Google'
   },
   {
     imgage: UDWP,
     title: 'Using Databases with Python',
     description: 'University of Michigan'
   },
+  {
+    imgage: KAH,
+    title: 'The Korean Alphabet: An Introduction to Hangeul',
+    description: 'Sungkyunkwan University'
+  }
 ]
 
-const slide3_certs = [
-  {
-    imgage: FSK,
-    title: 'First Step Korean',
-    description: 'Yonsei University'
-  },
+const slide4_certs = [
   {
     imgage: PFE,
     title: 'Programming for Everybody (Getting Started with Python)',
@@ -368,18 +412,13 @@ const slide3_certs = [
     imgage: UPAW,
     title: 'Using Python to Access the Web',
     description: 'University of Michigan'
-  },
-]
+  }
+];
 
-const slide4_certs = [
+const slide5_certs = [
   {
     imgage: CVDP,
     title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
-    description: 'University of Michigan'
-  },
-  {
-    imgage: I2C,
-    title: 'Introduction to CSS3',
     description: 'University of Michigan'
   },
   {
@@ -391,5 +430,18 @@ const slide4_certs = [
     imgage: I2H,
     title: 'Introduction to HTML5',
     description: 'University of Michigan'
+  }
+];
+
+const slide6_certs = [
+  {
+    imgage: I2C,
+    title: 'Introduction to CSS3',
+    description: 'University of Michigan'
+  },
+  {
+    imgage: FSK,
+    title: 'First Step Korean',
+    description: 'Yonsei University'
   }
 ];
