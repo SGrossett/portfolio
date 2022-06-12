@@ -3,3 +3,28 @@
 html, body {
   background-color: #000912;
 }
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .font-4 {
+    font-size: 2.7rem; }
+  .font-5 {
+    font-size: 1.1rem; }
+ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399px) { 
+  .font-4 {
+    font-size: 3rem; }
+  .font-5 {
+    font-size: 1.2rem; }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) { 
+  .font-4 {
+    font-size: 3.2rem; }
+  .font-5 {
+    font-size: 1.3rem; }
+  }

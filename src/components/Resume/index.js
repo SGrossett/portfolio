@@ -31,8 +31,8 @@ function Resume() {
     <Container className="contact-container">
       <Row className='mx-4'>
         <Col className='px-3'>
-          <h1 className='pb-1 contact-h1 text-info'>Resume</h1>
-          <p className='text-info2 '>Reach out on my contact page or click to &nbsp; 
+          <h1 className='font-4 pb-1 contact-h1 text-info'>Resume</h1>
+          <p className='text-info2 font-5'>Reach out on my contact page or click to &nbsp; 
             <em>
               <a 
                 href='mailto:selene.grossett@gmail.com'
