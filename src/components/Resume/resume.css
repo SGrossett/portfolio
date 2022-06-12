@@ -21,6 +21,12 @@ iframe {
 .info-button {
   font-size: 0.6rem;
 }
+.bg-lightslategrey {
+  background-color: #778899;
+}
+.bg-greyBlue {
+  background-color: #c7d0d8;
+}
 
 @media (min-width: 440px) and (max-width: 575px) { 
   iframe {

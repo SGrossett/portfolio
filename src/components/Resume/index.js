@@ -66,7 +66,7 @@ function Resume() {
           {showMore ? 
             <Container className='showmore-container'>
               <Card bg='white'>
-                <Card.Header><h5>Skills</h5></Card.Header>
+                <Card.Header className='bg-greyBlue'><h5>Skills</h5></Card.Header>
                 <Card.Body>
                   <ul className='list-group list-group-flush'>
                     <li className='list-group-item'>
@@ -85,7 +85,7 @@ function Resume() {
                 </Card.Body>
               </Card>
               <Card bg='white'>
-                <Card.Header><h5>Work Experience</h5></Card.Header>
+                <Card.Header className='bg-greyBlue'><h5>Work Experience</h5></Card.Header>
                 <Card.Body>
                   <ul className='list-group list-group-flush'>
                     <li className='list-group-item'>
@@ -175,7 +175,7 @@ function Resume() {
                 </Card.Body>
               </Card>
               <Card bg='white'>
-                <Card.Header><h5>Education</h5></Card.Header>
+                <Card.Header className='bg-greyBlue'><h5>Education</h5></Card.Header>
                 <Card.Body>
                   <ul className='list-group list-group-flush'>
                   <li className='list-group-item'>
@@ -207,7 +207,7 @@ function Resume() {
                 </Card.Body>
               </Card>
               <Card bg='white'>
-                <Card.Header><h5>Certifications</h5></Card.Header>
+                <Card.Header className='bg-greyBlue'><h5>Certifications</h5></Card.Header>
                 <Card.Body>
                   <Carousel>
                     <Carousel.Item>
