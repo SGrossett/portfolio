@@ -11,7 +11,7 @@ import healthCard from './images/healthCard.jpg';
 import markitCard from './images/markitCard.jpg';
 import pomifyCard from './images/pomifyCard2.png';
 import counsellingCard from './images/counsellingCard2.png'
-
+import resume from '../ResumeFile/Selene_Grossett_Resume.pdf';
 
 function HomePage() {
   return (
@@ -33,10 +33,10 @@ function HomePage() {
           <Row>
             
               <Button variant='outline-info hire-button'>
-                <Link to='/contact' className='text-decoration-none'>Hire me!</Link>
+                <Link to={resume} target='_blank' className='text-decoration-none'>Resumé</Link>
               </Button>
               <Button variant=' hire-button resume-button'>
-                <Link to='/contact' className='text-decoration-none'>Resumé</Link>
+                <Link to='/contact' className='text-decoration-none'>Hire Me!</Link>
               </Button>
             
           </Row>
