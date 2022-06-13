@@ -33,7 +33,15 @@ function Resume() {
       <Row className='mx-4'>
         <Col className='px-3'>
           <h1 className='font-4 pb-1 contact-h1 text-info'>Resume</h1>
-          <p className='text-info2 font-5'>Reach out on my contact page or click to &nbsp; 
+          <p className='text-info2 font-5'>
+            Reach out on my &nbsp;
+            <em>
+              <Link 
+                to='/contact' 
+                className='text-white font-bold'
+              >contact page</Link>
+            </em> 
+             &nbsp; page or click to &nbsp; 
             <em>
               <Link 
                 to={resumePDF} 
@@ -212,7 +220,7 @@ function Resume() {
                 <Card bg='white'>
                   <Card.Header className='bg-greyBlue'><h5 className='uppercase mb-0 p-1 font-bold'>Certifications</h5></Card.Header>
                   <Card.Body>
-                    <Carousel>
+                    <Carousel variant='dark'>
                       <Carousel.Item>
                         <Row>
                           {slide1_certs.map((cert) => (
@@ -222,6 +230,8 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/>
+                                    {/* <Card.Text>{`\n\n\n`}</Card.Text> */}
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -242,6 +252,7 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/>
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -262,6 +273,7 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/>
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -282,6 +294,7 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/>
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -302,6 +315,7 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/>
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -322,6 +336,7 @@ function Resume() {
                                 <Card.Body>
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
+                                    <br/><br/>
                                 </Card.Body>
                               </Card>
                           </Col>
@@ -448,3 +463,91 @@ const slide6_certs = [
     description: 'Yonsei University'
   }
 ];
+
+// const certs = [
+//   {
+//     imgage: PS,
+//     title: 'Python for Everybody Specialization',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: JADS,
+//     title: 'JavaScript Algorithms and Data Structures',
+//     description: 'freeCodeCamp'
+//   },
+//   {
+//     imgage: UPOS,
+//     title: 'Using Python to Interact witht the Operating System \n',
+//     description: 'Google'
+//   },
+//   {
+//     imgage: PDS,
+//     title: 'Python Data Structures',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: PFDU,
+//     title: 'Programming Foundations with JavaScript, HTML, and CSS',
+//     description: 'Duke University'
+//   },
+//   {
+//     imgage: SDET,
+//     title: 'Smart Devices & Mobile Emerging Technologies',
+//     description: 'Yonsei University'
+//   },
+//   {
+//     imgage: CCP,
+//     title: 'Crash Course on Python',
+//     description: 'Google'
+//   },
+//   {
+//     imgage: UDWP,
+//     title: 'Using Databases with Python',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: KAH,
+//     title: 'The Korean Alphabet: An Introduction to Hangeul',
+//     description: 'Sungkyunkwan University'
+//   },
+//   {
+//     imgage: PFE,
+//     title: 'Programming for Everybody (Getting Started with Python)',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: OODS,
+//     title: 'Object-Oriented Data Structures in C++',
+//     description: 'University of Illinois at Urbana-Champaign'
+//   },
+//   {
+//     imgage: UPAW,
+//     title: 'Using Python to Access the Web',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: CVDP,
+//     title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: L2SK,
+//     title: 'Learn to Speak Korean 1',
+//     description: 'Yonsei University'
+//   },
+//   {
+//     imgage: I2H,
+//     title: 'Introduction to HTML5',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: I2C,
+//     title: 'Introduction to CSS3',
+//     description: 'University of Michigan'
+//   },
+//   {
+//     imgage: FSK,
+//     title: 'First Step Korean',
+//     description: 'Yonsei University'
+//   }
+// ]
