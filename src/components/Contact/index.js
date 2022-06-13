@@ -25,7 +25,7 @@ function Contact() {
   return (
     <Container className="contact-container">
       <Row className='mx-4'>
-        <Col className='px-3' lg={5} >
+        <Row>
           <h1 className='font-4 pb-1 contact-h1 text-info'>Contact</h1>
           <p className='font-5 text-info2'>Get in touch or email me directly &nbsp;
             <em>
@@ -36,6 +36,8 @@ function Contact() {
             </em>
             .
           </p>
+        </Row>
+        <Col className='d-block mt-auto mb-auto px-3' lg={5} >
           <Media queries={{
             small: "(max-width: 575px)",
             medium: "(min-width: 576px) and (max-width: 991px)",
