@@ -6,6 +6,7 @@ import emailjs from 'emailjs-com';
 import Media from 'react-media';
 import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
+import arrowGirlLarge from './images/laptopGirl-arrowLarge.png';
 
 function Contact() {
     const sendEmail = (event) => {
@@ -25,8 +26,8 @@ function Contact() {
     <Container className="contact-container">
       <Row className='mx-4'>
         <Col className='px-3' lg={5} >
-          <h1 className='pb-1 contact-h1 text-info'>Contact</h1>
-          <p className='text-info2'>Get in touch or email me directly &nbsp;
+          <h1 className='font-4 pb-1 contact-h1 text-info'>Contact</h1>
+          <p className='font-5 text-info2'>Get in touch or email me directly &nbsp;
             <em>
               <a 
                 href='mailto:selene.grossett@gmail.com'
@@ -38,7 +39,8 @@ function Contact() {
           <Media queries={{
             small: "(max-width: 575px)",
             medium: "(min-width: 576px) and (max-width: 991px)",
-            large: "(min-width: 992px)"
+            large: "(min-width: 992px) and (max-width: 1399px",
+            xlarge: "(min-width: 1400px)"
           }}>
             {matches => (
               <Fragment>
@@ -50,6 +52,11 @@ function Contact() {
                 {matches.large && 
                   <Col className='d-flex justify-content-center mt-5'>
                     <Image src={arrowGirl}/>
+                  </Col>
+                }
+                {matches.xlarge && 
+                  <Col className='d-flex justify-content-center mt-5'>
+                    <Image src={arrowGirlLarge}/>
                   </Col>
                 }
               </Fragment>
@@ -69,7 +76,15 @@ function Contact() {
             </Form.Group>
             <Form.Group className="mb-4" controlId="formMessage">
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
-              <Form.Control as="textarea" name='message' rows={8} />
+              <Media queries={{ xlarge: { minWidth: 1400 } }}>
+                {matches =>
+                  matches.xlarge ? (
+                    <Form.Control as="textarea" name='message' rows={13} />
+                  ) : (
+                    <Form.Control as="textarea" name='message' rows={8} />
+                  )
+                }
+              </Media>
             </Form.Group>
             <Button className='contact-button'  type="submit">
               Send Message
