@@ -1,5 +1,6 @@
 import './resume.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card, Carousel, Stack } from 'react-bootstrap';
 // import { slide1_certs, slide2_certs, slide3_certs, slide4_certs } from './certifications/Certs.js';
 
@@ -21,7 +22,7 @@ import PS from './images/python-specialization.jpg';
 import FSK from './images/FSK-cert.jpg';
 import KAH from './images/KAH-cert.jpg';
 
-import PDF from './Selene_Grossett_Resume.pdf';
+import resumePDF from '../ResumeFile/Selene_Grossett_Resume.pdf';
 // import { slide1_certs } from './certifications/certs';
 
 function Resume() {
@@ -34,10 +35,11 @@ function Resume() {
           <h1 className='font-4 pb-1 contact-h1 text-info'>Resume</h1>
           <p className='text-info2 font-5'>Reach out on my contact page or click to &nbsp; 
             <em>
-              <a 
-                href='mailto:selene.grossett@gmail.com'
+              <Link 
+                to={resumePDF} 
+                target='_blank'
                 className='text-white font-bold'
-              >download</a>
+              >download</Link>
             </em>
             &nbsp; my resume.
           </p>
@@ -45,7 +47,7 @@ function Resume() {
       </Row>
       <Row className='preview-row mt-5'>
           <iframe 
-            src={`${PDF}#view=fitH&toolbar=0`} 
+            src={`${resumePDF}#view=fitH&toolbar=0`} 
             title='My Resume'
             scrolling='auto'
             className='mt-4'
