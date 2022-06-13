@@ -6,7 +6,8 @@ import emailjs from 'emailjs-com';
 import Media from 'react-media';
 import arrowGirl from './images/laptopGirl-arrow.png';
 import laptopGirl from './images/sharp-laptopGirl.png';
-import arrowGirlLarge from './images/laptopGirl-arrowLarge.png';
+import arrowGirlLG from './images/laptopGirl-arrowLG.png';
+import arrowGirlXL from './images/laptopGirl-arrowXL.png';
 
 function Contact() {
     const sendEmail = (event) => {
@@ -41,8 +42,9 @@ function Contact() {
           <Media queries={{
             small: "(max-width: 575px)",
             medium: "(min-width: 576px) and (max-width: 991px)",
-            large: "(min-width: 992px) and (max-width: 1399px",
-            xlarge: "(min-width: 1400px)"
+            large: "(min-width: 992px) and (max-width: 1199px",
+            xlarge: "(min-width: 1200px) and (max-width: 1399px",
+            xxlarge: "(min-width: 1400px)"
           }}>
             {matches => (
               <Fragment>
@@ -58,7 +60,12 @@ function Contact() {
                 }
                 {matches.xlarge && 
                   <Col className='d-flex justify-content-center mt-5'>
-                    <Image src={arrowGirlLarge}/>
+                    <Image src={arrowGirlLG}/>
+                  </Col>
+                }
+                {matches.xxlarge && 
+                  <Col className='d-flex justify-content-center mt-5'>
+                    <Image src={arrowGirlXL}/>
                   </Col>
                 }
               </Fragment>
@@ -78,14 +85,24 @@ function Contact() {
             </Form.Group>
             <Form.Group className="mb-4" controlId="formMessage">
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
-              <Media queries={{ xlarge: { minWidth: 1400 } }}>
-                {matches =>
-                  matches.xlarge ? (
-                    <Form.Control as="textarea" name='message' rows={13} />
-                  ) : (
-                    <Form.Control as="textarea" name='message' rows={8} />
-                  )
-                }
+              <Media queries={{
+                small: "(max-width: 1199px",
+                xlarge: "(min-width: 1200px) and (max-width: 1399px",
+                xxlarge: "(min-width: 1400px)"
+              }}>
+                {matches => (
+                  <Fragment>
+                    {matches.small && 
+                      <Form.Control as="textarea" name='message' rows={8} />
+                    }
+                    {matches.xlarge && 
+                      <Form.Control as="textarea" name='message' rows={11} />
+                    }
+                    {matches.xxlarge && 
+                      <Form.Control as="textarea" name='message' rows={13} />
+                    }
+                  </Fragment>
+                )}
               </Media>
             </Form.Group>
             <Button className='contact-button'  type="submit">
