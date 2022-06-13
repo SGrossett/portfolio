@@ -10,7 +10,7 @@ function Resume() {
   const [showMore, setShowMore] = useState(false);
 
   return (
-    <Container className="contact-container">
+    <Container className='contact-container'>
       <Row className='mx-4'>
         <Col className='px-3'>
           <h1 className='font-4 pb-1 contact-h1 text-info'>Resume</h1>

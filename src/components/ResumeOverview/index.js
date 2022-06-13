@@ -46,12 +46,12 @@ function ResumeOverview() {
           <Card.Body>
             <ul className='list-group list-group-flush'>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Self-Employed</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Self-Employed</h5>
                   <medium className='font-bold'>Brantford</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Private STEM & Special Needs Tutor</p>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Private STEM & Special Needs Tutor</p>
                   <small>September 2015 – Present</small>
                 </div>
                 <ul>
@@ -60,12 +60,12 @@ function ResumeOverview() {
                 </ul>
               </li>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Frontline Consulting</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Frontline Consulting</h5>
                   <medium className='font-bold'>Edmonton, Alberta</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Software Developer</p>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Software Developer</p>
                   <small>March 2022 - April 2022</small>
                 </div>
                 <ul>
@@ -75,12 +75,12 @@ function ResumeOverview() {
                 </ul>
               </li>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Halycon IQ</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Halycon IQ</h5>
                   <medium className='font-bold'>Toronto, Ontario</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Full Stack Web Developer</p>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Full Stack Web Developer</p>
                   <small>February 2022 - April 2022</small>
                 </div>
                 <ul>
@@ -90,12 +90,12 @@ function ResumeOverview() {
                 </ul>
               </li>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">IndiGrowth Health & Wellness</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>IndiGrowth Health & Wellness</h5>
                   <medium className='font-bold'>Victoria, British Columbia</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Web Developer</p>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Web Developer</p>
                   <small>February 2022 - March 2022</small>
                 </div>
                 <ul>
@@ -105,12 +105,12 @@ function ResumeOverview() {
                 </ul>
               </li>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Nanotech Innovation</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Nanotech Innovation</h5>
                   <medium className='font-bold'>Toronto, Ontario</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Website Design</p>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Website Design</p>
                   <small>February 2022 - March 2022</small>
                 </div>
                 <ul>
@@ -136,23 +136,23 @@ function ResumeOverview() {
           <Card.Body>
             <ul className='list-group list-group-flush'>
             <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Lighthouse Labs</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Lighthouse Labs</h5>
                   <medium className='font-bold'>Toronto, Ontario</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Full Stack Web Development</p>
-                  <small class="font-italic">Graduation Date: February 2022</small>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Full Stack Web Development</p>
+                  <small class='font-italic'>Graduation Date: February 2022</small>
                 </div>
               </li>
               <li className='list-group-item'>
-                <div class="d-flex w-100 justify-content-between">
-                  <h5 class="mb-0 font-bold">Oakwood University</h5>
+                <div class='d-flex w-100 justify-content-between'>
+                  <h5 class='mb-0 font-bold'>Oakwood University</h5>
                   <medium className='font-bold'>Huntsville, Alabama</medium>
                 </div>
-                <div class="d-flex w-100 justify-content-between">
-                  <p class="mb-1 font-italic">Bachelor of Science in Applied Mathematics (summa cum laude)</p>
-                  <small class="font-italic">Graduation Date: May 2019</small>
+                <div class='d-flex w-100 justify-content-between'>
+                  <p class='mb-1 font-italic'>Bachelor of Science in Applied Mathematics (summa cum laude)</p>
+                  <small class='font-italic'>Graduation Date: May 2019</small>
                 </div>
                 <ul className='mt-1'>
                   <li><strong>GPA:</strong> 3.93</li>
@@ -170,7 +170,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                   {slide1_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
@@ -187,7 +187,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                 {slide2_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
@@ -203,7 +203,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                 {slide3_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
@@ -219,7 +219,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                 {slide4_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
@@ -235,7 +235,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                 {slide5_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
@@ -251,7 +251,7 @@ function ResumeOverview() {
               <Carousel.Item>
                 <Row>
                 {slide6_certs.map((cert) => (
-                    <Col class="mb-3">
+                    <Col class='mb-3'>
                       <Card>
                         <Card.Img variant='top' src={cert.imgage} />
                         <Card.Body>
