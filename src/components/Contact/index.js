@@ -24,7 +24,7 @@ function Contact() {
   }
 
   return (
-    <Container className="contact-container">
+    <Container className='contact-container'>
       <Row className='mx-4'>
         <Row>
           <h1 className='font-4 pb-1 contact-h1 text-info'>Contact</h1>
@@ -40,11 +40,11 @@ function Contact() {
         </Row>
         <Col className='d-block mt-auto mb-auto px-3' lg={5} >
           <Media queries={{
-            small: "(max-width: 575px)",
-            medium: "(min-width: 576px) and (max-width: 991px)",
-            large: "(min-width: 992px) and (max-width: 1199px",
-            xlarge: "(min-width: 1200px) and (max-width: 1399px",
-            xxlarge: "(min-width: 1400px)"
+            small: '(max-width: 575px)',
+            medium: '(min-width: 576px) and (max-width: 991px)',
+            large: '(min-width: 992px) and (max-width: 1199px',
+            xlarge: '(min-width: 1200px) and (max-width: 1399px',
+            xxlarge: '(min-width: 1400px)'
           }}>
             {matches => (
               <Fragment>
@@ -75,37 +75,37 @@ function Contact() {
         <Col ></Col>
         <Col className='b-secondary p-4 contact-bg rounded-container form-mobile' lg={6}>
           <Form className='pb-3 px-3' onSubmit={sendEmail}>
-            <Form.Group className="mb-3 pt-3" controlId="formName">
+            <Form.Group className='mb-3 pt-3' controlId='formName'>
               <Form.Label className='text-uppercase text-bg'>Full name</Form.Label>
-              <Form.Control type="text" name='name' />
+              <Form.Control type='text' name='name' />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="fromEmail">
+            <Form.Group className='mb-3' controlId='fromEmail'>
               <Form.Label className='text-uppercase text-bg'>Email</Form.Label>
-              <Form.Control type="email" name='email' />
+              <Form.Control type='email' name='email' />
             </Form.Group>
-            <Form.Group className="mb-4" controlId="formMessage">
+            <Form.Group className='mb-4' controlId='formMessage'>
               <Form.Label className='text-uppercase text-bg'>Message</Form.Label>
               <Media queries={{
-                small: "(max-width: 1199px",
-                xlarge: "(min-width: 1200px) and (max-width: 1399px",
-                xxlarge: "(min-width: 1400px)"
+                small: '(max-width: 1199px',
+                xlarge: '(min-width: 1200px) and (max-width: 1399px',
+                xxlarge: '(min-width: 1400px)'
               }}>
                 {matches => (
                   <Fragment>
                     {matches.small && 
-                      <Form.Control as="textarea" name='message' rows={8} />
+                      <Form.Control as='textarea' name='message' rows={8} />
                     }
                     {matches.xlarge && 
-                      <Form.Control as="textarea" name='message' rows={11} />
+                      <Form.Control as='textarea' name='message' rows={11} />
                     }
                     {matches.xxlarge && 
-                      <Form.Control as="textarea" name='message' rows={13} />
+                      <Form.Control as='textarea' name='message' rows={13} />
                     }
                   </Fragment>
                 )}
               </Media>
             </Form.Group>
-            <Button className='contact-button'  type="submit">
+            <Button className='contact-button'  type='submit'>
               Send Message
             </Button>
           </Form>
