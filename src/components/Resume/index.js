@@ -2,7 +2,6 @@ import './resume.css';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card, Carousel, Stack } from 'react-bootstrap';
-// import { slide1_certs, slide2_certs, slide3_certs, slide4_certs } from './certifications/Certs.js';
 
 import PFE from './images/PFE-cert.jpg';
 import PDS from './images/PDS-cert.jpg';
@@ -23,7 +22,6 @@ import FSK from './images/FSK-cert.jpg';
 import KAH from './images/KAH-cert.jpg';
 
 import resumePDF from '../ResumeFile/Selene_Grossett_Resume.pdf';
-// import { slide1_certs } from './certifications/certs';
 
 function Resume() {
   const [showMore, setShowMore] = useState(false);
@@ -231,16 +229,11 @@ function Resume() {
                                     <Card.Title>{cert.title}</Card.Title>
                                     <Card.Text>{cert.description}</Card.Text>
                                     <br/>
-                                    {/* <Card.Text>{`\n\n\n`}</Card.Text> */}
                                 </Card.Body>
                               </Card>
                           </Col>
                           ))}
                         </Row>
-                        {/* <Carousel.Caption>
-                          <h3>First slide label</h3>
-                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
 
                       <Carousel.Item>
@@ -258,11 +251,6 @@ function Resume() {
                           </Col>
                           ))}
                         </Row>
-
-                        {/* <Carousel.Caption>
-                          <h3>Second slide label</h3>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
                       <Carousel.Item>
                         <Row>
@@ -279,11 +267,6 @@ function Resume() {
                           </Col>
                           ))}
                         </Row>
-
-                        {/* <Carousel.Caption>
-                          <h3>Third slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
                       <Carousel.Item>
                         <Row>
@@ -300,11 +283,6 @@ function Resume() {
                           </Col>
                           ))}
                         </Row>
-
-                        {/* <Carousel.Caption>
-                          <h3>Forth slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
                       <Carousel.Item>
                         <Row>
@@ -321,11 +299,6 @@ function Resume() {
                           </Col>
                           ))}
                         </Row>
-
-                        {/* <Carousel.Caption>
-                          <h3>Forth slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
                       <Carousel.Item>
                         <Row>
@@ -342,11 +315,6 @@ function Resume() {
                           </Col>
                           ))}
                         </Row>
-
-                        {/* <Carousel.Caption>
-                          <h3>Forth slide label</h3>
-                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        </Carousel.Caption> */}
                       </Carousel.Item>
                     </Carousel>
                   </Card.Body>
@@ -463,91 +431,3 @@ const slide6_certs = [
     description: 'Yonsei University'
   }
 ];
-
-// const certs = [
-//   {
-//     imgage: PS,
-//     title: 'Python for Everybody Specialization',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: JADS,
-//     title: 'JavaScript Algorithms and Data Structures',
-//     description: 'freeCodeCamp'
-//   },
-//   {
-//     imgage: UPOS,
-//     title: 'Using Python to Interact witht the Operating System \n',
-//     description: 'Google'
-//   },
-//   {
-//     imgage: PDS,
-//     title: 'Python Data Structures',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: PFDU,
-//     title: 'Programming Foundations with JavaScript, HTML, and CSS',
-//     description: 'Duke University'
-//   },
-//   {
-//     imgage: SDET,
-//     title: 'Smart Devices & Mobile Emerging Technologies',
-//     description: 'Yonsei University'
-//   },
-//   {
-//     imgage: CCP,
-//     title: 'Crash Course on Python',
-//     description: 'Google'
-//   },
-//   {
-//     imgage: UDWP,
-//     title: 'Using Databases with Python',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: KAH,
-//     title: 'The Korean Alphabet: An Introduction to Hangeul',
-//     description: 'Sungkyunkwan University'
-//   },
-//   {
-//     imgage: PFE,
-//     title: 'Programming for Everybody (Getting Started with Python)',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: OODS,
-//     title: 'Object-Oriented Data Structures in C++',
-//     description: 'University of Illinois at Urbana-Champaign'
-//   },
-//   {
-//     imgage: UPAW,
-//     title: 'Using Python to Access the Web',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: CVDP,
-//     title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: L2SK,
-//     title: 'Learn to Speak Korean 1',
-//     description: 'Yonsei University'
-//   },
-//   {
-//     imgage: I2H,
-//     title: 'Introduction to HTML5',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: I2C,
-//     title: 'Introduction to CSS3',
-//     description: 'University of Michigan'
-//   },
-//   {
-//     imgage: FSK,
-//     title: 'First Step Korean',
-//     description: 'Yonsei University'
-//   }
-// ]
