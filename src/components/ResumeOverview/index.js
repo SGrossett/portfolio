@@ -17,6 +17,7 @@ import JADS from './images/JADS-cert.jpg';
 import PS from './images/python-specialization.jpg';
 import FSK from './images/FSK-cert.jpg';
 import KAH from './images/KAH-cert.jpg';
+import LHL from './images/LHLFramed-cert.jpg';
 
 function ResumeOverview() {
   return (
@@ -300,18 +301,23 @@ const slide2_certs = [
     description: 'University of Michigan'
   },
   {
+    imgage: LHL,
+    title: 'Full Stack Web Development',
+    description: 'Lighthouse Labs'
+  },
+  {
     imgage: PFDU,
     title: 'Programming Foundations with JavaScript, HTML, and CSS',
     description: 'Duke University'
-  },
-  {
-    imgage: SDET,
-    title: 'Smart Devices & Mobile Emerging Technologies',
-    description: 'Yonsei University'
   }
 ]
 
 const slide3_certs = [
+  {
+    imgage: SDET,
+    title: 'Smart Devices & Mobile Emerging Technologies',
+    description: 'Yonsei University'
+  },
   {
     imgage: CCP,
     title: 'Crash Course on Python',
@@ -321,15 +327,15 @@ const slide3_certs = [
     imgage: UDWP,
     title: 'Using Databases with Python',
     description: 'University of Michigan'
-  },
-  {
-    imgage: KAH,
-    title: 'The Korean Alphabet: An Introduction to Hangeul',
-    description: 'Sungkyunkwan University'
   }
 ]
 
 const slide4_certs = [
+  {
+    imgage: KAH,
+    title: 'The Korean Alphabet: An Introduction to Hangeul',
+    description: 'Sungkyunkwan University'
+  },
   {
     imgage: PFE,
     title: 'Programming for Everybody (Getting Started with Python)',
@@ -339,15 +345,15 @@ const slide4_certs = [
     imgage: OODS,
     title: 'Object-Oriented Data Structures in C++',
     description: 'University of Illinois at Urbana-Champaign'
-  },
-  {
-    imgage: UPAW,
-    title: 'Using Python to Access the Web',
-    description: 'University of Michigan'
   }
 ];
 
 const slide5_certs = [
+  {
+    imgage: UPAW,
+    title: 'Using Python to Access the Web',
+    description: 'University of Michigan'
+  },
   {
     imgage: CVDP,
     title: 'Capstone: Retrieving, Processing, and Visualizing Data with Python',
@@ -357,15 +363,15 @@ const slide5_certs = [
     imgage: L2SK,
     title: 'Learn to Speak Korean 1',
     description: 'Yonsei University'
-  },
-  {
-    imgage: I2H,
-    title: 'Introduction to HTML5',
-    description: 'University of Michigan'
   }
 ];
 
 const slide6_certs = [
+  {
+    imgage: I2H,
+    title: 'Introduction to HTML5',
+    description: 'University of Michigan'
+  },
   {
     imgage: I2C,
     title: 'Introduction to CSS3',
